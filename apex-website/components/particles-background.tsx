@@ -1,5 +1,4 @@
 "use client"
-
 import { useEffect, useRef } from "react"
 import Script from "next/script"
 
@@ -72,7 +71,7 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
               out_mode: "out",
               bounce: false,
               attract: {
-                enable: false,
+                enable: true,
                 rotateX: 600,
                 rotateY: 1200,
               },
@@ -83,11 +82,11 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
             events: {
               onhover: {
                 enable: true,
-                mode: "repulse", // Particles move away from cursor
+                mode: "attract",
               },
               onclick: {
                 enable: true,
-                mode: "push", // Add particles on click
+                mode: "push",
               },
               resize: true,
             },
@@ -105,15 +104,12 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
                 opacity: 8,
                 speed: 3,
               },
-              repulse: {
-                distance: 150, // Increased from 200 for more noticeable effect
+              attract: {
+                distance: 200,
                 duration: 0.4,
               },
               push: {
-                particles_nb: 6, // Increased from 4 for more noticeable effect
-              },
-              remove: {
-                particles_nb: 2,
+                particles_nb: 14, 
               },
             },
           },
@@ -196,11 +192,11 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
                       },
                     },
                     interactivity: {
-                      detect_on: "canvas", // Detect mouse interactions on the canvas
+                      detect_on: "canvas", 
                       events: {
                         onhover: {
                           enable: true,
-                          mode: "repulse", // Particles will move away from cursor on hover
+                          mode: "attract", 
                         },
                         onclick: {
                           enable: true,
@@ -244,7 +240,13 @@ export default function ParticlesBackground({ className }: ParticlesBackgroundPr
       <div
         id="particles-js"
         ref={containerRef}
-        className={`absolute inset-0 -z-10 bg-apex-red ${className || ""}`}
+        style={{
+          backgroundImage: "url('/images/red-bg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+
+        }}
+        className={`absolute inset-0 -z-10 ${className || ""}`}
       ></div>
     </>
   )

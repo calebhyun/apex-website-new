@@ -27,6 +27,7 @@ import {
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import PageHeader from "@/components/page-header"
+import { generateGoogleCalendarLink, parseEventDate, parseEventTime } from "@/utils/calendar"
 
 // Timeline data with minimalist icons instead of emojis
 const timelineEvents = [
@@ -37,7 +38,7 @@ const timelineEvents = [
     time: "6:00 PM - 8:00 PM",
     location: "Michigan Union",
     description: "Learn about Apex Consulting Group and other student organizations on campus.",
-    active: true,
+    active: false,
     icon: <Building className="h-5 w-5" />,
   },
   {
@@ -126,24 +127,24 @@ const timelineEvents = [
 const applicationSteps = [
   {
     title: "Written Application",
-    description: "Submit your resume and answer a few short questions about your interest in consulting and Apex.",
+    description: "Submit your resume and answer a few short questions about your interest in consulting and APEX.",
     icon: <FileText className="h-10 w-10 text-apex-red" />,
     details:
       "Our written application helps us understand your background, interests, and why you want to join APEX. Be authentic and showcase your unique experiences and perspectives.",
   },
   {
     title: "First Round Interview",
-    description: "A behavioral interview to assess your fit with our organization's culture and values.",
+    description: "A case and behavioral interview to assess your fit with our organization's culture and values and problem solving abilities",
     icon: <MessageSquare className="h-10 w-10 text-apex-red" />,
     details:
-      "During this interview, we want to get to know you better. We'll ask about your experiences, how you handle challenges, and what you're looking for in a student organization.",
+      "Don't worry if you've never done a case interview before! We provide case workshops to help you prepare. We're looking for structured thinking and creative problem-solving, not perfect answers.",
   },
   {
-    title: "Case Interview",
-    description: "A case-based interview to evaluate your problem-solving skills and analytical thinking.",
+    title: "Second Round Interview",
+    description: "Similar to the first round interview, this interview will mix technicals and behaviorals to hollistically evaluate you",
     icon: <Briefcase className="h-10 w-10 text-apex-red" />,
     details:
-      "Don't worry if you've never done a case interview before! We provide case workshops to help you prepare. We're looking for structured thinking and creative problem-solving, not perfect answers.",
+      "Be sure to showcase your personality, as well as your problem solving skills! Remember, there are no right answers.",
   },
   {
     title: "Final Decision",
@@ -169,7 +170,7 @@ const faqItems = [
   {
     question: "Which majors are eligible to apply?",
     answer:
-      "Students from all majors are encouraged to apply! We value diverse perspectives and have members from business, engineering, liberal arts, and many other fields. What matters most is your interest in consulting  engineering, liberal arts, and many other fields. What matters most is your interest in consulting and commitment to professional growth.",
+      "Students from all majors are encouraged to apply! We value diverse perspectives and have members from the school of business, engineering, LSA, etc. What matters most is your interest in consulting and commitment to professional growth.",
   },
   {
     question: "When can I apply to join APEX?",
@@ -276,6 +277,32 @@ export default function JoinPage() {
     return () => document.removeEventListener("click", handleClick)
   }, [])
 
+  // Function to generate Google Calendar link for an event
+  const getCalendarLink = (event: (typeof timelineEvents)[0]) => {
+    // Parse the date and time
+    const startDate = parseEventDate(event.date)
+
+    // Handle time ranges and various time formats
+    let startTime = ""
+    let endTime = ""
+
+    if (event.time && event.time !== "Various Times") {
+      const times = parseEventTime(event.time)
+      startTime = times.startTime
+      endTime = times.endTime
+    }
+
+    // Generate the calendar link
+    return generateGoogleCalendarLink({
+      title: `APEX Consulting: ${event.title}`,
+      startDate,
+      startTime,
+      endTime,
+      location: event.location,
+      description: event.description,
+    })
+  }
+
   return (
     <div>
       <PageHeader
@@ -372,9 +399,14 @@ export default function JoinPage() {
                             </div>
                           ) : (
                             <Button variant="outline" className="text-sm" asChild>
-                              <Link href="#" className="flex items-center gap-1">
+                              <a
+                                href={getCalendarLink(event)}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-1"
+                              >
                                 Add to Calendar <ArrowRight className="h-3 w-3" />
-                              </Link>
+                              </a>
                             </Button>
                           )}
                         </div>

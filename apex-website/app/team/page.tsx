@@ -13,82 +13,274 @@ const teamMembers = {
     {
       name: "Sajni Patel",
       role: "President",
-      image: "/placeholder.svg?height=300&width=300",
-      linkedin: "#",
-      email: "sajnip@umich.edu",
+      image: "/images/headshots/Board/SajniP2.jpeg",
+      linkedin: "https://www.linkedin.com/in/sajnipatelll/",
+      email: "sajni@umich.edu",
     },
     {
-      name: "Sreejay",
-      role: "Vice President Internal Relations",
-      image: "/placeholder.svg?height=300&width=300",
-      linkedin: "#",
-      email: "alexj@umich.edu",
+      name: "Sreejay Ramakrishnan",
+      role: "VP Internal Development",
+      image: "/images/headshots/Board/SreejayR.JPG",
+      linkedin: "https://www.linkedin.com/in/sreejay-ramakrishnan/",
+      email: "sreejayr@umich.edu",
     },
     {
-      name: "etc",
-      role: "Vice President External Relations",
-      image: "/placeholder.svg?height=300&width=300",
-      linkedin: "#",
-      email: "mayar@umich.edu",
+      name: "George Perakis",
+      role: "VP External Relations",
+      image: "/images/headshots/Board/GeorgeP.jpeg",
+      linkedin: "https://www.linkedin.com/in/georgepperakis/",
+      email: "gperakis@umich.edu",
+    },
+
+    {
+      name: "Ivan Dashkevich",
+      role: "VP Project Management",
+      image: "/images/headshots/Board/IvanD.JPG",
+      linkedin: "https://www.linkedin.com/in/idashkevich05/",
+      email: "idashkev@umich.edu",
+    },
+
+    {
+      name: "Noah Knutsen",
+      role: "VP Client Acquisition",
+      image: "/images/headshots/Board/NoahK.JPG",
+      linkedin: "https://www.linkedin.com/in/noah-knutsen/",
+      email: "nknutsen@umich.edu",
+    },
+
+    {
+      name: "Urmi Joglekar",
+      role: "VP Technology and Operations",
+      image: "/images/headshots/Board/UrmiJ.JPG",
+      linkedin: "https://www.linkedin.com/in/urmi-joglekar/",
+      email: "urmij@umich.edu",
     },
 
   ],
   projectManagers: [
     {
-      name: "Jane Smith",
+      name: "Aparna Srikanth",
       role: "Project Manager",
-      image: "/placeholder.svg?height=300&width=300",
-      linkedin: "#",
-      email: "jane@example.com",
+      image: "/images/headshots/PM/AparnaS.JPG",
+      linkedin: "https://www.linkedin.com/in/aparnasrikanth/",
+      email: "aparnsr@umich.edu",
     },
     {
-      name: "John Doe",
+      name: "Ayden Simckes",
       role: "Project Manager",
-      image: "/placeholder.svg?height=300&width=300",
-      linkedin: "#",
-      email: "john@example.com",
+      image: "/images/headshots/PM/AydenS.jpg",
+      linkedin: "https://www.linkedin.com/in/ayden-simckes/",
+      email: "asimckes@umich.edu",
+    },
+    {
+      name: "Chris Shang",
+      role: "Project Manager",
+      image: "/images/headshots/PM/ChrisS.jpg",
+      linkedin: "https://www.linkedin.com/in/chrissh/",
+      email: "chrissh@umich.edu",
+    },
+    {
+      name: "Kristin Choi",
+      role: "Project Manager",
+      image: "/images/headshots/PM/KristinC.jpeg",
+      linkedin: "https://www.linkedin.com/in/kristinchoi05/",
+      email: "krischoi@umich.edu",
+    },
+    {
+      name: "Sophia Rich",
+      role: "Project Manager",
+      image: "/images/headshots/PM/SophiaR.jpg",
+      linkedin: "https://www.linkedin.com/in/sophiarich/",
+      email: "sophr@umich.edu",
     }
   ],
   businessAnalystLeads: [
     {
+      name: "Jacob Harleton",
+      role: "Business Analyst Lead",
+      image: "/images/headshots/BAL/JacobH.JPG",
+      linkedin: "https://www.linkedin.com/in/jacobharleton/",
+      email: "harleton@umich.edu",
+    },
+    {
+      name: "Kavya Doshi",
+      role: "Business Analyst Lead",
+      image: "/images/headshots/BAL/KavyaD.jpeg",
+      linkedin: "https://www.linkedin.com/in/kavya-doshi/",
+      email: "doshika@umich.edu",
+    },
+    {
+      name: "Kritika Singh",
+      role: "Business Analyst Lead",
+      image: "/images/headshots/BAL/KritikaS.jpg",
+      linkedin: "https://www.linkedin.com/in/kritika-singhh/",
+      email: "skritika@umich.edu",
+    },
+    {
       name: "Noor Shah",
       role: "Business Analyst Lead",
-      image: "/placeholder.svg?height=300&width=300",
-      linkedin: "#",
-      email: "michael@example.com",
+      image: "/images/headshots/BAL/NoorS.JPG",
+      linkedin: "https://www.linkedin.com/in/noor-u-shah/",
+      email: "noorshah@umich.edu",
     },
+    {
+      name: "Sorelle Kreter",
+      role: "Business Analyst Lead",
+      image: "/images/headshots/BAL/SorelleK.jpeg",
+      linkedin: "https://www.linkedin.com/in/sorelle-kreter/",
+      email: "skreter@umich.edu",
+    }
 
   ],
-  businessAnalysts: [
+  businessAnalysts: [    
     {
-      name: "Jane Doe2",
-      role: "Business Analyst",
-      image: "/placeholder.svg?height=300&width=300",
-      linkedin: "#",
-      email: "david@example.com",
+    name: "Chris Munroe",
+    role: "Business Analyst",
+    image: "/placeholder.svg?height=300&width=300",
+    linkedin: "https://www.linkedin.com/in/chrismunroe12/",
+    email: "cmunroe@umich.edu",
     },
     {
-      name: "John Doe12",
+      name: "David Gonzalez",
       role: "Business Analyst",
       image: "/placeholder.svg?height=300&width=300",
-      linkedin: "#",
-      email: "jessica@example.com",
+      linkedin: "https://www.linkedin.com/in/davidgzzmtz/",
+      email: "davidgmz@umich.edu",
+    },
+    {
+      name: "Katelyn Knickerbocker",
+      role: "Business Analyst",
+      image: "/placeholder.svg?height=300&width=300",
+      linkedin: "https://www.linkedin.com/in/katelyn-knickerbocker-75103b332/",
+      email: "kkately@umich.edu",
+    },
+    {
+      name: "Jessica Youn",
+      role: "Business Analyst",
+      image: "/placeholder.svg?height=300&width=300",
+      linkedin: "https://www.linkedin.com/in/jessicayoun/",
+      email: "jyoun@umich.edu",
+    },
+    {
+      name: "Jiali Goodwin",
+      role: "Business Analyst",
+      image: "/placeholder.svg?height=300&width=300",
+      linkedin: "https://www.linkedin.com/in/jiali-goodwin/",
+      email: "jialig@umich.edu",
+    },
+    {
+      name: "Mark Bokas",
+      role: "Business Analyst",
+      image: "/placeholder.svg?height=300&width=300",
+      linkedin: "https://www.linkedin.com/in/markbokas/",
+      email: "bokas@umich.edu",
+    },
+    {
+      name: "Nikhil Akkala",
+      role: "Business Analyst",
+      image: "/images/headshots/BA/NikhilA.JPG",
+      linkedin: "https://www.linkedin.com/in/nikhil-akkala/",
+      email: "nakkala@umich.edu",
+    },
+    {
+      name: "Reagan Masek",
+      role: "Business Analyst",
+      image: "/placeholder.svg?height=300&width=300",
+      linkedin: "https://www.linkedin.com/in/reagan-masek/",
+      email: "rmasek@umich.edu",
+    },
+    {
+      name: "Ryan Wells",
+      role: "Business Analyst",
+      image: "/images/headshots/BA/RyanW.jpeg",
+      linkedin: "https://www.linkedin.com/in/ryanwells10/",
+      email: "rpwells@umich.edu",
+    },
+    {
+      name: "Sam Pelter",
+      role: "Business Analyst",
+      image: "/placeholder.svg?height=300&width=300",
+      linkedin: "https://www.linkedin.com/in/samanthapelter/",
+      email: "spelter@umich.edu",
+    },
+    {
+      name: "Sanjay Tilak",
+      role: "Business Analyst",
+      image: "/images/headshots/BA/SanjayT",
+      linkedin: "https://www.linkedin.com/in/sanjay-tilak/",
+      email: "sanjayt@umich.edu",
+    },    
+    {
+      name: "Vansh Baxi",
+      role: "Business Analyst",
+      image: "/placeholder.svg?height=300&width=300",
+      linkedin: "https://www.linkedin.com/in/vanshbaxi/",
+      email: "vbaxi@umich.edu",
+    },
+    {
+      name: "Zain Syed",
+      role: "Business Analyst",
+      image: "/images/headshots/BA/ZainS.jpg",
+      linkedin: "https://www.linkedin.com/in/zainsyedd/",
+      email: "zainsy@umich.edu",
     },
   ],
   seniorAdvisors: [
     {
-      name: "Hi this is noor",
+      name: "Caleb Hyun",
       role: "Senior Advisor",
-      image: "/placeholder.svg?height=300&width=300",
-      linkedin: "#",
-      email: "robert@example.com",
+      image: "/images/headshots/SA/CalebH.jpg",
+      linkedin: "https://www.linkedin.com/in/calebkhyun/",
+      email: "ckhyun@umich.edu",
     },
     {
-      name: "hi again",
+      name: "Henry Chapman",
       role: "Senior Advisor",
-      image: "/placeholder.svg?height=300&width=300",
-      linkedin: "#",
-      email: "amanda@example.com",
+      image: "/images/headshots/SA/HenryC.JPG",
+      linkedin: "https://www.linkedin.com/in/henry-chapman-3436852b4/",
+      email: "hcchap@umich.edu",
+    },
+    {
+      name: "Jaden Douglas",
+      role: "Senior Advisor",
+      image: "/images/headshots/SA/JadenD.JPG",
+      linkedin: "https://www.linkedin.com/in/jadendouglas/",
+      email: "jadend@umich.edu",
+    },
+    {
+      name: "Meha Nagireddy",
+      role: "Senior Advisor",
+      image: "/images/headshots/SA/MehaN2.JPG",
+      linkedin: "https://www.linkedin.com/in/mehanagireddy/",
+      email: "mnagired@umich.edu",
+    },
+    {
+      name: "Rishi Juneja",
+      role: "Senior Advisor",
+      image: "/images/headshots/SA/RishiJ.JPG",
+      linkedin: "https://www.linkedin.com/in/rishijuneja//",
+      email: "rishij@umich.edu",
+    },
+    {
+      name: "Ronith Ganjigunta",
+      role: "Senior Advisor",
+      image: "/images/headshots/SA/RonithG.JPG",
+      linkedin: "https://www.linkedin.com/in/ronithganjigunta/",
+      email: "rronith@umich.edu",
+    },
+    {
+      name: "Ruthie Yu",
+      role: "Senior Advisor",
+      image: "/images/headshots/SA/RuthieY.JPG",
+      linkedin: "https://www.linkedin.com/in/ruthie-yu/",
+      email: "yuruthie@umich.edu",
+    },
+    {
+      name: "Tayla Jankowski",
+      role: "Senior Advisor",
+      image: "/images/headshots/SA/TaylaJ.jpeg",
+      linkedin: "https://www.linkedin.com/in/tayla-jankowski/",
+      email: "taylajan@umich.edu",
     },
   ],
 }
@@ -101,9 +293,7 @@ export default function TeamPage() {
       <PageHeader
         title="Our Team"
         descriptions={[
-          "Meet the dedicated individuals who make Apex Consulting Group the University of Michigan's premier consulting organization.",
-          "Our diverse team brings together talent from across campus to deliver exceptional results.",
-          "Each member contributes unique skills and perspectives to our collaborative environment.",
+          "Meet the Wonderful Minds Behind APEX Consulting",
         ]}
       />
 
@@ -154,11 +344,16 @@ export default function TeamPage() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {teamMembers[currentRole as keyof typeof teamMembers].map((member, index) => (
               <Card key={index} className="overflow-hidden group hover:shadow-lg transition-all">
-                <div className="aspect-square relative">
-                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+                <div className="relative w-full h-[500px]">
+                <Image
+                  src={member.image || "/placeholder.svg"}
+                  alt={member.name}
+                  fill
+                  className="object-cover object-top rounded-t-md"
+                />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-4">
                     <div className="flex gap-2">
                       <Button variant="outline" size="icon" className="bg-white text-black" asChild>

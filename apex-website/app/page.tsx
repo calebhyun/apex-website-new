@@ -36,7 +36,7 @@ export default function Home() {
       {/* Scrolling Sections */}
       <ScrollSection />
 
-      {/* Services section removed as requested */}
+
     </div>
   )
 }
