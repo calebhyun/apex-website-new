@@ -156,38 +156,39 @@ const applicationSteps = [
 ]
 
 // FAQ data
-const faqItems = [
-  {
-    question: "Do I need prior consulting experience to join APEX?",
-    answer:
-      "No prior consulting experience is required! We welcome students from all backgrounds and majors. Our training program will teach you everything you need to know about consulting.",
-  },
-  {
-    question: "What is the time commitment for APEX members?",
-    answer:
-      "APEX members typically dedicate 5-10 hours per week to the organization. This includes client project work, professional development sessions, and social events. The time commitment may vary throughout the semester based on project deadlines.",
-  },
-  {
-    question: "Which majors are eligible to apply?",
-    answer:
-      "Students from all majors are encouraged to apply! We value diverse perspectives and have members from the school of business, engineering, LSA, etc. What matters most is your interest in consulting and commitment to professional growth.",
-  },
-  {
-    question: "When can I apply to join APEX?",
-    answer:
-      "We recruit new members at the beginning of each fall and winter semester. Check our recruitment timeline for specific dates and deadlines for the current recruitment cycle.",
-  },
-  {
-    question: "What types of clients does APEX work with?",
-    answer:
-      "APEX works with a diverse range of clients, including local businesses, startups, non-profits, and larger corporations. Our projects span various industries and focus areas, giving members exposure to different business challenges and environments.",
-  },
-  {
-    question: "How can I prepare for the case interview?",
-    answer:
-      "We host case workshops during the recruitment process to help candidates prepare. Additionally, you can practice with case interview books, online resources, or by forming case groups with friends. Remember, we're looking for your approach to problem-solving, not necessarily perfect answers.",
-  },
-]
+
+  const faqItems = [
+    {
+      question: "Do I need prior consulting experience to join APEX?",
+      answer:
+        "No prior consulting experience is required! We welcome students from all backgrounds and majors. Our training program will teach you everything you need to know about consulting.",
+    },
+    {
+      question: "What is the time commitment for APEX members?",
+      answer:
+        "APEX members typically dedicate 5-10 hours per week to the organization. This includes client project work, professional development sessions, and social events. The time commitment may vary throughout the semester based on project deadlines.",
+    },
+    {
+      question: "Which majors are eligible to apply?",
+      answer:
+        "Students from all majors are encouraged to apply! We value diverse perspectives and have members from the school of business, engineering, LSA, etc. What matters most is your interest in consulting and commitment to professional growth.",
+    },
+    {
+      question: "When can I apply to join APEX?",
+      answer:
+        "We recruit new members at the beginning of each fall and winter semester. Check our recruitment timeline for specific dates and deadlines for the current recruitment cycle.",
+    },
+    {
+      question: "What types of clients does APEX work with?",
+      answer:
+        "APEX works with a diverse range of clients, including local businesses, startups, non-profits, and larger corporations. Our projects span various industries and focus areas, giving members exposure to different business challenges and environments.",
+    },
+    {
+      question: "How can I prepare for the case interview?",
+      answer:
+        "We host case workshops during the recruitment process to help candidates prepare. Additionally, you can practice with case interview books, online resources, or by forming case groups with friends. Remember, we're looking for your approach to problem-solving, not necessarily perfect answers.",
+    },
+  ]
 
 // Community images for carousel
 const communityImages = [

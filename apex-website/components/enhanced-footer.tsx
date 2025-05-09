@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Facebook, Instagram, Linkedin, Twitter, Mail, MapPin, Phone } from "lucide-react"
+import { ArrowRight, Facebook, Instagram, Linkedin, Twitter, Mail, MapPin, Phone, File, PencilIcon} from "lucide-react"
 
 export default function EnhancedFooter() {
   return (
@@ -77,7 +77,7 @@ export default function EnhancedFooter() {
 
                 <p className="mb-8 text-white/90 text-lg">
                   Partner with APEX to receive data-driven, strategic recommendations from our talented team of
-                  consultants. We've helped over 130 organizations achieve their goals.
+                  consultants. We've helped over 50 organizations achieve their goals.
                 </p>
 
                 <div className="mt-auto">
@@ -164,21 +164,21 @@ export default function EnhancedFooter() {
                 providing strategic solutions to businesses and organizations.
               </p>
               <div className="flex space-x-4 mt-6">
-                <Link href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
-                  <Facebook className="h-5 w-5" />
-                  <span className="sr-only">Facebook</span>
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSf6rtQgTm84YtamSkkP38ruzoLwPCTaRcb1BvZRWw6EuQADLg/closedform" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
+                  <PencilIcon className="h-5 w-5" />
+                  <span className="sr-only">PencilIcon</span>
                 </Link>
-                <Link href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
+                <Link href="https://www.instagram.com/apexconsultingumich?igsh=MXE3OGFpaDA5dnJraA==" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
                 </Link>
-                <Link href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
-                  <Twitter className="h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
-                </Link>
-                <Link href="#" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
+                <Link href="https://www.linkedin.com/company/apexconsultinggroup/posts/?feedView=all" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
                   <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
+                  <span className="sr-only">Linkedin</span>
+                </Link>
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc-mBvMGKgyuG-h7AomOOVRq8SSRm9jknVB22Qy_SHFWRNFCw/viewform" className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors">
+                  <Mail className="h-5 w-5" />
+                  <span className="sr-only">Mail</span>
                 </Link>
               </div>
             </div>
@@ -212,11 +212,8 @@ export default function EnhancedFooter() {
                 <Link href="/contact" className="text-gray-300 hover:text-apex-red transition-colors">
                   Contact
                 </Link>
-                <Link href="#" className="text-gray-300 hover:text-apex-red transition-colors">
+                <Link href="/join" className="text-gray-300 hover:text-apex-red transition-colors">
                   FAQ
-                </Link>
-                <Link href="#" className="text-gray-300 hover:text-apex-red transition-colors">
-                  Privacy Policy
                 </Link>
               </nav>
             </div>
@@ -243,13 +240,7 @@ export default function EnhancedFooter() {
                     href="mailto:info@apexconsulting.org"
                     className="text-gray-300 hover:text-apex-red transition-colors"
                   >
-                    info@apexconsulting.org
-                  </a>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="h-5 w-5 text-apex-red mr-3 flex-shrink-0" />
-                  <a href="tel:+17345551234" className="text-gray-300 hover:text-apex-red transition-colors">
-                    (734) 555-1234
+                    apex.board2025@umich.edu
                   </a>
                 </div>
               </div>

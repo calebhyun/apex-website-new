@@ -13,7 +13,7 @@ export default function ScrollSection() {
     { icon: Users, value: "100+", label: "Consultants Trained" },
     { icon: Building, value: "50+", label: "Client Projects" },
     { icon: GraduationCap, value: "200+", label: "Alumni Network" },
-    { icon: BarChart3, value: "95%", label: "Placement Rate" },
+    { icon: BarChart3, value: "100%", label: "Placement Rate" },
   ]
 
   // Welcome section with fade-in animation
