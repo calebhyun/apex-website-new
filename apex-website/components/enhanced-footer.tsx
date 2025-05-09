@@ -254,21 +254,6 @@ export default function EnhancedFooter() {
             </p>
             <div className="mt-4 md:mt-0">
               <ul className="flex space-x-6 text-sm text-gray-400">
-                <li>
-                  <Link href="#" className="hover:text-apex-red transition-colors">
-                    Terms
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-apex-red transition-colors">
-                    Privacy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-apex-red transition-colors">
-                    Cookies
-                  </Link>
-                </li>
               </ul>
             </div>
           </div>
