@@ -206,7 +206,7 @@ const teamMembers = {
     {
       name: "Sanjay Tilak",
       role: "Business Analyst",
-      image: "/images/headshots/BA/SanjayT",
+      image: "/images/headshots/BA/SanjayT.JPG",
       linkedin: "https://www.linkedin.com/in/sanjay-tilak/",
       email: "sanjayt@umich.edu",
     },    

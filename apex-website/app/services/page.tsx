@@ -14,7 +14,10 @@ import {
   BarChart4,
   Lightbulb,
   Target,
+  HeartHandshake,
   Puzzle,
+  UserCheck,
+  PresentationIcon as PresentationChart,
 } from "lucide-react"
 import PageHeader from "@/components/page-header"
 import { motion, AnimatePresence } from "framer-motion"
@@ -165,30 +168,31 @@ const services = [
 const processSteps = [
   {
     number: 1,
-    title: "Discovery",
+    title: "Client Onboarding",
     description:
-      "We begin by understanding your business, challenges, and goals through in-depth research and analysis.",
-    icon: <Lightbulb className="h-6 w-6" />,
+      "Initial meeting with our VP Projects and VP Client Acquisition to understand your business needs and establish project scope. All services are provided pro bono.",
+    icon: <HeartHandshake className="h-6 w-6" />,
   },
   {
     number: 2,
-    title: "Strategy",
+    title: "Team Assignment",
     description:
-      "We develop a customized strategy and implementation plan tailored to your specific needs and objectives.",
-    icon: <Target className="h-6 w-6" />,
+      "You'll meet your dedicated Project Manager (PM) and Business Analyst Lead (BAL) who will serve as your primary points of contact throughout the 8-week engagement.",
+    icon: <UserCheck className="h-6 w-6" />,
   },
   {
     number: 3,
-    title: "Execution",
+    title: "Data Analysis",
     description:
-      "We work alongside your team to implement the strategy, measure results, and make adjustments as needed.",
-    icon: <Puzzle className="h-6 w-6" />,
+      "Our team conducts thorough research and analysis, working closely with you to gather insights and develop strategic recommendations.",
+    icon: <BarChart4 className="h-6 w-6" />,
   },
   {
     number: 4,
-    title: "Evaluation",
-    description: "We measure the impact of our work, identify areas for improvement, and ensure sustainable results.",
-    icon: <BarChart4 className="h-6 w-6" />,
+    title: "Deliverables",
+    description:
+      "We provide formal midpoint and final deliverables to ensure your organization receives maximum value from our partnership.",
+    icon: <PresentationChart className="h-6 w-6" />,
   },
 ]
 
@@ -208,131 +212,14 @@ export default function ServicesPage() {
 
       <div className="py-10 md:py-16">
         <div className="container px-4 md:px-6">
-          <Tabs defaultValue="marketing" className="w-full" onValueChange={setActiveTab}>
-            <TabsList className="grid grid-cols-3 md:grid-cols-6 w-full mb-8">
-              {services.map((service) => (
-                <TabsTrigger key={service.id} value={service.id} className="flex items-center gap-2">
-                  {service.icon}
-                  {service.title}
-                </TabsTrigger>
-              ))}
-            </TabsList>
-
-            <AnimatePresence mode="wait">
-              {services.map((service) => (
-                <TabsContent key={service.id} value={service.id} className="mt-8">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20 }}
-                    transition={{ duration: 0.3 }}
-                    className="space-y-8"
-                  >
-                    <div>
-                      <h2 className="text-3xl font-bold flex items-center gap-2">
-                        <span className="text-apex-red">{service.icon}</span>
-                        {service.title} Consulting
-                      </h2>
-                      <p className="text-muted-foreground mt-2">{service.description}</p>
-                    </div>
-
-                    <Card className="overflow-hidden border-none shadow-lg">
-                      <CardContent className="p-0">
-                        <div className="bg-gradient-to-r from-apex-red to-red-700 p-4 text-white">
-                          <h3 className="text-xl font-bold">Case Study</h3>
-                          <div className="flex items-center gap-2 mt-1 text-sm">
-                            <Calendar className="h-4 w-4" />
-                            <span>Project Semester: {service.caseStudy.semester}</span>
-                          </div>
-                        </div>
-
-                        <div className="p-6 space-y-8">
-                          {/* Client Overview Section */}
-                          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-                            <h4 className="text-lg font-semibold flex items-center gap-2 mb-3">
-                              <Users className="h-5 w-5 text-apex-red" />
-                              Client Overview
-                            </h4>
-                            <p>{service.caseStudy.clientOverview}</p>
-                          </div>
-
-                          {/* Problem & Solution Sections */}
-                          <div className="grid md:grid-cols-2 gap-6">
-                            <motion.div
-                              initial={{ opacity: 0, y: 20 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ delay: 0.1 }}
-                              className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6"
-                            >
-                              <h4 className="text-lg font-semibold flex items-center gap-2 mb-3 text-blue-700 dark:text-blue-300">
-                                <Target className="h-5 w-5" />
-                                The Challenge
-                              </h4>
-                              <p className="text-gray-700 dark:text-gray-300">{service.caseStudy.problem}</p>
-                            </motion.div>
-
-                            <motion.div
-                              initial={{ opacity: 0, y: 20 }}
-                              animate={{ opacity: 1, y: 0 }}
-                              transition={{ delay: 0.2 }}
-                              className="bg-green-50 dark:bg-green-900/20 rounded-lg p-6"
-                            >
-                              <h4 className="text-lg font-semibold flex items-center gap-2 mb-3 text-green-700 dark:text-green-300">
-                                <Lightbulb className="h-5 w-5" />
-                                Our Approach
-                              </h4>
-                              <p className="text-gray-700 dark:text-gray-300">{service.caseStudy.solution}</p>
-                            </motion.div>
-                          </div>
-
-                          {/* Deliverables Section */}
-                          <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.3 }}
-                            className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 border-apex-red"
-                          >
-                            <h4 className="text-lg font-semibold flex items-center gap-2 mb-4 text-apex-red">
-                              <CheckCircle2 className="h-5 w-5" />
-                              Key Deliverables
-                            </h4>
-                            <ul className="space-y-4">
-                              {service.caseStudy.deliverables.map((deliverable, index) => (
-                                <motion.li
-                                  key={index}
-                                  className="flex items-start"
-                                  initial={{ opacity: 0, x: -20 }}
-                                  animate={{ opacity: 1, x: 0 }}
-                                  transition={{ delay: 0.3 + index * 0.1 }}
-                                >
-                                  <div className="bg-green-100 dark:bg-green-900 rounded-full p-1 mr-3 flex-shrink-0 mt-0.5">
-                                    <CheckCircle2 className="h-4 w-4 text-green-600 dark:text-green-400" />
-                                  </div>
-                                  <span className="text-gray-700 dark:text-gray-300">{deliverable}</span>
-                                </motion.li>
-                              ))}
-                            </ul>
-                          </motion.div>
-                        </div>
-                      </CardContent>
-                    </Card>
-
-                    <div className="flex justify-center">
-                      <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-700">
-                        <Link href="/contact" className="flex items-center gap-2">
-                          Inquire About This Service <ArrowRight className="h-4 w-4" />
-                        </Link>
-                      </Button>
-                    </div>
-                  </motion.div>
-                </TabsContent>
-              ))}
-            </AnimatePresence>
-          </Tabs>
-
-          {/* Animated Process Section */}
-          <div className="mt-24">
-            <h2 className="text-2xl font-bold mb-12 text-center">Our Consulting Process</h2>
+          {/* Animated Process Section - MOVED TO TOP */}
+          <div className="mb-24">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <h2 className="text-2xl font-bold mb-4">Our Consulting Process</h2>
+              <p className="text-muted-foreground">
+                Our structured 8-week pro bono consulting process delivers maximum value to our clients.
+              </p>
+            </div>
             <div className="relative">
               {/* Connecting line */}
               <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 dark:bg-gray-700 transform -translate-x-1/2 z-0"></div>
@@ -370,6 +257,138 @@ export default function ServicesPage() {
                 ))}
               </div>
             </div>
+          </div>
+
+          {/* Case Studies Section - MOVED BELOW PROCESS */}
+          <div className="mt-12">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <h2 className="text-2xl font-bold mb-4">Our Case Studies</h2>
+              <p className="text-muted-foreground">
+                From strategic initiatives to technical projects, explore our diverse portfolio of client work.
+              </p>
+            </div>
+
+            <Tabs defaultValue="marketing" className="w-full" onValueChange={setActiveTab}>
+              <TabsList className="grid grid-cols-3 md:grid-cols-6 w-full mb-8">
+                {services.map((service) => (
+                  <TabsTrigger key={service.id} value={service.id} className="flex items-center gap-2">
+                    {service.icon}
+                    {service.title}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+
+              <AnimatePresence mode="wait">
+                {services.map((service) => (
+                  <TabsContent key={service.id} value={service.id} className="mt-8">
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -20 }}
+                      transition={{ duration: 0.3 }}
+                      className="space-y-8"
+                    >
+                      <div>
+                        <h2 className="text-3xl font-bold flex items-center gap-2">
+                          <span className="text-apex-red">{service.icon}</span>
+                          {service.title} Consulting
+                        </h2>
+                        <p className="text-muted-foreground mt-2">{service.description}</p>
+                      </div>
+
+                      <Card className="overflow-hidden border-none shadow-lg">
+                        <CardContent className="p-0">
+                          <div className="bg-gradient-to-r from-apex-red to-red-700 p-4 text-white">
+                            <h3 className="text-xl font-bold">Case Study</h3>
+                            <div className="flex items-center gap-2 mt-1 text-sm">
+                              <Calendar className="h-4 w-4" />
+                              <span>Project Semester: {service.caseStudy.semester}</span>
+                            </div>
+                          </div>
+
+                          <div className="p-6 space-y-8">
+                            {/* Client Overview Section */}
+                            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
+                              <h4 className="text-lg font-semibold flex items-center gap-2 mb-3">
+                                <Users className="h-5 w-5 text-apex-red" />
+                                Client Overview
+                              </h4>
+                              <p>{service.caseStudy.clientOverview}</p>
+                            </div>
+
+                            {/* Problem & Solution Sections */}
+                            <div className="grid md:grid-cols-2 gap-6">
+                              <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.1 }}
+                                className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-6"
+                              >
+                                <h4 className="text-lg font-semibold flex items-center gap-2 mb-3 text-blue-700 dark:text-blue-300">
+                                  <Target className="h-5 w-5" />
+                                  The Challenge
+                                </h4>
+                                <p className="text-gray-700 dark:text-gray-300">{service.caseStudy.problem}</p>
+                              </motion.div>
+
+                              <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.2 }}
+                                className="bg-green-50 dark:bg-green-900/20 rounded-lg p-6"
+                              >
+                                <h4 className="text-lg font-semibold flex items-center gap-2 mb-3 text-green-700 dark:text-green-300">
+                                  <Lightbulb className="h-5 w-5" />
+                                  Our Approach
+                                </h4>
+                                <p className="text-gray-700 dark:text-gray-300">{service.caseStudy.solution}</p>
+                              </motion.div>
+                            </div>
+
+                            {/* Deliverables Section */}
+                            <motion.div
+                              initial={{ opacity: 0, y: 20 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ delay: 0.3 }}
+                              className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border-l-4 border-apex-red"
+                            >
+                              <h4 className="text-lg font-semibold flex items-center gap-2 mb-4 text-apex-red">
+                                <CheckCircle2 className="h-5 w-5" />
+                                Key Deliverables
+                              </h4>
+                              <ul className="space-y-4">
+                                {service.caseStudy.deliverables.map((deliverable, index) => (
+                                  <motion.li
+                                    key={index}
+                                    className="flex items-start"
+                                    initial={{ opacity: 0, x: -20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: 0.3 + index * 0.1 }}
+                                  >
+                                    <div className="bg-green-100 dark:bg-green-900 rounded-full p-1 mr-3 flex-shrink-0 mt-0.5">
+                                      <CheckCircle2 className="h-4 w-4 text-green-600 dark:text-green-400" />
+                                    </div>
+                                    <span className="text-gray-700 dark:text-gray-300">{deliverable}</span>
+                                  </motion.li>
+                                ))}
+                              </ul>
+                            </motion.div>
+                          </div>
+                        </CardContent>
+                      </Card>
+
+                      <div className="flex justify-center">
+                        <Button asChild size="lg" className="bg-gray-800 hover:bg-gray-700">
+                          <Link href="/contact" className="flex items-center gap-2">
+                            Inquire About This Service <ArrowRight className="h-4 w-4" />
+                          </Link>
+                        </Button>
+                      </div>
+                    </motion.div>
+                  </TabsContent>
+                ))}
+              </AnimatePresence>
+            </Tabs>
           </div>
         </div>
       </div>
