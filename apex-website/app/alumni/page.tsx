@@ -152,7 +152,7 @@ export default function AlumniPage() {
       <PageHeader
         title="Our Alumni Network"
         descriptions={[
-          "Apex Consulting Group alumni have gone on to work at top companies across various industries.",
+          "APEX Consulting Group alumni have gone on to work at top companies across various industries.",
           "Explore where our former members are making an impact in consulting, finance, and technology.",
           "Our alumni network continues to grow and support current members through mentorship and opportunities.",
         ]}

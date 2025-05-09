@@ -204,7 +204,7 @@ export default function ServicesPage() {
       <PageHeader
         title="Client Services"
         descriptions={[
-          "Apex Consulting Group offers a wide range of consulting services to help businesses achieve their goals.",
+          "APEX Consulting Group offers a wide range of consulting services to help businesses achieve their goals.",
           "Our team delivers data-driven, strategic solutions across various industries and business challenges.",
           "Explore our service areas and case studies to learn how we can help your organization succeed.",
         ]}
@@ -259,7 +259,7 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* Case Studies Section - MOVED BELOW PROCESS */}
+          {/* Case Studies Section */}
           <div className="mt-12">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-2xl font-bold mb-4">Our Case Studies</h2>

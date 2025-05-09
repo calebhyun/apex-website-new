@@ -212,8 +212,11 @@ export default function EnhancedFooter() {
                 <Link href="/contact" className="text-gray-300 hover:text-apex-red transition-colors">
                   Contact
                 </Link>
-                <Link href="/join" className="text-gray-300 hover:text-apex-red transition-colors">
+                <Link href="/join#faq" className="text-gray-300 hover:text-apex-red transition-colors">
                   FAQ
+                </Link>
+                <Link href="https://creators.spotify.com/pod/profile/apex-consulting/" className="text-gray-300 hover:text-apex-red transition-colors">
+                  Podcast
                 </Link>
               </nav>
             </div>

@@ -1,14 +1,21 @@
 "use client"
 import ParticlesBackground from "@/components/particles-background"
 import TypingEffect from "@/components/typing-effect"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 interface PageHeaderProps {
   title: string
   descriptions: string[]
   className?: string
+  ctaButton?: {
+    text: string
+    href: string
+    variant?: "default" | "outline" | "secondary"
+  }
 }
 
-export default function PageHeader({ title, descriptions, className = "" }: PageHeaderProps) {
+export default function PageHeader({ title, descriptions, className = "", ctaButton }: PageHeaderProps) {
   return (
     <div className={`relative ${className}`}>
       {/* Particle Background */}
@@ -22,6 +29,19 @@ export default function PageHeader({ title, descriptions, className = "" }: Page
             <div className="h-12 md:h-16">
               <TypingEffect texts={descriptions} className="text-lg md:text-xl font-medium text-white" />
             </div>
+
+            {ctaButton && (
+
+                <Button
+                  asChild
+                  size="lg"
+                  variant={ctaButton.variant || "default"}
+                  className="bg-white text-apex-red hover:bg-white/90 font-bold text-lg px-8 py-6 shadow-lg"
+                >
+                  <Link href={ctaButton.href}>{ctaButton.text}</Link>
+                </Button>
+
+            )}
           </div>
         </div>
       </div>

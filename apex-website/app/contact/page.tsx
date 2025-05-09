@@ -12,6 +12,7 @@ import { toast } from "@/components/ui/use-toast"
 import { Instagram, Linkedin, Mail, MapPin, Music } from "lucide-react"
 import Link from "next/link"
 import PageHeader from "@/components/page-header"
+import { submitContactForm } from "@/actions/contact-form"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -22,6 +23,7 @@ export default function ContactPage() {
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [formStatus, setFormStatus] = useState<{ success?: boolean; message?: string } | null>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -31,23 +33,54 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setFormStatus(null)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    try {
+      // Create FormData object from the form data
+      const formDataObj = new FormData()
+      Object.entries(formData).forEach(([key, value]) => {
+        formDataObj.append(key, value)
+      })
 
-    toast({
-      title: "Message Sent",
-      description: "Thank you for contacting us. We'll get back to you soon.",
-    })
+      // Submit the form using the server action
+      const result = await submitContactForm(formDataObj)
 
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    })
+      // Show success or error message
+      setFormStatus(result)
 
-    setIsSubmitting(false)
+      if (result.success) {
+        // Reset form on success
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        })
+
+        toast({
+          title: "Message Sent",
+          description: result.message,
+        })
+      } else {
+        toast({
+          title: "Error",
+          description: result.message,
+        })
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error)
+      setFormStatus({
+        success: false,
+        message: "There was an error sending your message. Please try again later.",
+      })
+
+      toast({
+        title: "Error",
+        description: "There was an error sending your message. Please try again later.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   // Ensure all links scroll to top of page
@@ -139,6 +172,15 @@ export default function ContactPage() {
                       required
                     />
                   </div>
+
+                  {formStatus && (
+                    <div
+                      className={`p-3 rounded-md ${formStatus.success ? "bg-green-50 text-green-800" : "bg-red-50 text-red-800"}`}
+                    >
+                      {formStatus.message}
+                    </div>
+                  )}
+
                   <Button type="submit" className="w-full" disabled={isSubmitting}>
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
@@ -186,22 +228,22 @@ export default function ContactPage() {
                 <CardContent>
                   <div className="flex gap-4">
                     <Button variant="outline" size="icon" asChild>
-                      <Link href="#" aria-label="Instagram">
+                      <Link href="https://www.instagram.com/apexconsultingumich?igsh=MXE3OGFpaDA5dnJraA==" aria-label="Instagram">
                         <Instagram className="h-5 w-5" />
                       </Link>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
-                      <Link href="#" aria-label="Mailing List">
+                      <Link href="https://docs.google.com/forms/d/e/1FAIpQLSc-mBvMGKgyuG-h7AomOOVRq8SSRm9jknVB22Qy_SHFWRNFCw/viewform" aria-label="Mailing List">
                         <Mail className="h-5 w-5" />
                       </Link>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
-                      <Link href="#" aria-label="LinkedIn">
+                      <Link href="https://www.linkedin.com/company/apexconsultinggroup/posts/?feedView=all" aria-label="LinkedIn">
                         <Linkedin className="h-5 w-5" />
                       </Link>
                     </Button>
                     <Button variant="outline" size="icon" asChild>
-                      <Link href="#" aria-label="Spotify Podcast">
+                      <Link href="https://creators.spotify.com/pod/profile/apex-consulting/" aria-label="Spotify Podcast">
                         <Music className="h-5 w-5" />
                       </Link>
                     </Button>

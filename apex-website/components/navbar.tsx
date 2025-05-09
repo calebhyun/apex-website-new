@@ -15,6 +15,12 @@ const navItems = [
   { name: "Client Services", href: "/services" },
   { name: "Prospective Members", href: "/join" },
   { name: "Contact Us", href: "/contact" },
+  {
+    name: "Apply Now",
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSf6rtQgTm84YtamSkkP38ruzoLwPCTaRcb1BvZRWw6EuQADLg/closedform",
+    isExternal: true,
+    isCallToAction: true,
+  },
 ]
 
 export default function Navbar() {
@@ -25,7 +31,25 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/images/apex-logo.png" alt="Apex Consulting Group" width={120} height={50} />
+          {/* Updated Image component with proper error handling and fallback */}
+          <div className="relative h-12 w-32">
+            <Image
+              src="/images/apex-logo.png"
+              alt="Apex Consulting Group"
+              fill
+              style={{ objectFit: "contain" }}
+              priority
+              onError={(e) => {
+                // Fallback to text if image fails to load
+                const target = e.target as HTMLImageElement
+                target.style.display = "none"
+                const parent = target.parentElement
+                if (parent) {
+                  parent.innerHTML += '<span class="font-bold text-xl text-apex-red">APEX</span>'
+                }
+              }}
+            />
+          </div>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
@@ -33,9 +57,17 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
+              target={item.isExternal ? "_blank" : undefined}
+              rel={item.isExternal ? "noopener noreferrer" : undefined}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-red-600",
-                pathname === item.href ? "text-red-600" : "text-muted-foreground",
+                item.isCallToAction
+                  ? "bg-apex-red text-white px-4 py-2 rounded-md font-bold hover:bg-red-700 transition-colors"
+                  : "text-sm font-medium transition-colors hover:text-red-600",
+                !item.isCallToAction && pathname === item.href
+                  ? "text-red-600"
+                  : !item.isCallToAction
+                    ? "text-muted-foreground"
+                    : "",
               )}
             >
               {item.name}
@@ -56,9 +88,17 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
+                target={item.isExternal ? "_blank" : undefined}
+                rel={item.isExternal ? "noopener noreferrer" : undefined}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-red-600 block py-2",
-                  pathname === item.href ? "text-red-600" : "text-muted-foreground",
+                  item.isCallToAction
+                    ? "bg-apex-red text-white px-4 py-2 rounded-md font-bold hover:bg-red-700 transition-colors text-center"
+                    : "text-sm font-medium transition-colors hover:text-red-600 block py-2",
+                  !item.isCallToAction && pathname === item.href
+                    ? "text-red-600"
+                    : !item.isCallToAction
+                      ? "text-muted-foreground"
+                      : "",
                 )}
                 onClick={() => setMobileMenuOpen(false)}
               >

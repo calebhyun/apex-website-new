@@ -33,88 +33,96 @@ import { generateGoogleCalendarLink, parseEventDate, parseEventTime } from "@/ut
 const timelineEvents = [
   {
     id: "meet-the-clubs",
-    title: "Meet the Clubs",
-    date: "September 5, 2023",
-    time: "6:00 PM - 8:00 PM",
-    location: "Michigan Union",
-    description: "Learn about Apex Consulting Group and other student organizations on campus.",
+    title: "BBA Meet the Clubs",
+    date: "Thursday January 16, 2025",
+    time: "6:00 PM - 9:00 PM",
+    location: "Ross Basement - Table 41",
+    description: "Learn about APEX Consulting Group and other student organizations on campus",
     active: false,
     icon: <Building className="h-5 w-5" />,
   },
   {
     id: "application-release",
     title: "Application Release",
-    date: "September 7, 2023",
+    date: "Friday, January 17, 2025",
     time: "12:00 PM",
     location: "Online",
-    description: "Applications for Apex Consulting Group will be available on our website.",
+    description: "Applications for APEX Consulting Group will be available on our website.",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSf6rtQgTm84YtamSkkP38ruzoLwPCTaRcb1BvZRWw6EuQADLg/closedform",
+    linkText: "Apply here",
     active: false,
     icon: <FileText className="h-5 w-5" />,
   },
   {
     id: "mass-meeting",
     title: "Mass Meeting",
-    date: "September 10, 2023",
+    date: "Sunday, January 17, 2025",
     time: "7:00 PM - 8:30 PM",
-    location: "Ross School of Business, R1210",
-    description: "Learn more about Apex Consulting Group, our projects, and the application process.",
+    location: "Blau Colloquium",
+    description: "Learn more about APEX Consulting Group, our projects, and the application process",
     active: false,
     icon: <Users className="h-5 w-5" />,
   },
   {
     id: "speed-dating",
     title: "Speed Dating",
-    date: "September 12, 2023",
-    time: "6:00 PM - 8:00 PM",
-    location: "Ross School of Business, Winter Garden",
-    description: "Meet current members and learn about their experiences with Apex.",
+    date: "Saturday, January 25, 2025",
+    time: "1:00 PM - 3:00 PM",
+    location: "Locations vary, reference sign up",
+    description: "Meet current members and learn about their experiences with APEX. ",
+    url: "https://www.signupgenius.com/go/10C0848AFA62BAAF8C34-54388586-apex#/",
+    linkInDescription: "Sign up required",
     active: false,
     icon: <MessageSquare className="h-5 w-5" />,
   },
   {
     id: "dei-panel",
-    title: "DEI Panel",
-    date: "September 14, 2023",
-    time: "5:00 PM - 6:30 PM",
-    location: "Ross School of Business, R2240",
-    description: "Learn about our commitment to diversity, equity, and inclusion.",
+    title: "DEI Career Panel + Networking",
+    date: "Monday January 27, 2025",
+    time: "7:00 PM - 8:30 PM",
+    location: "B1580",
+    description: "Learn about our commitment to diversity, equity, and inclusion",
     active: false,
     icon: <Users className="h-5 w-5" />,
   },
   {
     id: "application-office-hours",
     title: "Application Office Hours",
-    date: "September 15-17, 2023",
-    time: "Various Times",
-    location: "Ross School of Business",
-    description: "Get help with your application from current members.",
+    date: "Tuesday, January 28, 2025",
+    time: "4:00 PM - 6:00 PM",
+    location: "Zoom",
+    description: "Get help with your application from current members ",
+    url: "https://umich.zoom.us/j/7991518779#success",
+    linkInDescription: "via Zoom",
     active: false,
     icon: <HelpCircle className="h-5 w-5" />,
   },
   {
     id: "app-due",
     title: "Application Deadline",
-    date: "September 18, 2023",
+    date: "Tuesday, January 28, 2025",
     time: "11:59 PM",
     location: "Online",
-    description: "All applications must be submitted by this time.",
+    description: "All applications must be submitted by this time. ",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSf6rtQgTm84YtamSkkP38ruzoLwPCTaRcb1BvZRWw6EuQADLg/closedform",
+    linkText: "Apply here",
     active: false,
     icon: <Clock className="h-5 w-5" />,
   },
   {
     id: "case-workshop",
     title: "Case Workshop",
-    date: "September 20, 2023",
-    time: "6:00 PM - 8:00 PM",
-    location: "Ross School of Business, R1220",
-    description: "Learn about case interviews and practice with current members.",
+    date: "Wednesday, January 29, 2025",
+    time: "7:00 PM - 8:00 PM",
+    location: "See Invitation",
+    description: "Learn about case interviews and practice with current members. Invite only event",
     active: false,
     icon: <Briefcase className="h-5 w-5" />,
   },
   {
     id: "interviews",
     title: "Interviews",
-    date: "September 22-24, 2023",
+    date: "Friday, January 31, 2025 - Sunday, February 2, 2025",
     time: "Various Times",
     location: "Ross School of Business",
     description: "Selected candidates will be invited for interviews.",
@@ -134,21 +142,23 @@ const applicationSteps = [
   },
   {
     title: "First Round Interview",
-    description: "A case and behavioral interview to assess your fit with our organization's culture and values and problem solving abilities",
+    description:
+      "A case and behavioral interview to assess your fit with our organization's culture and values and problem solving abilities",
     icon: <MessageSquare className="h-10 w-10 text-apex-red" />,
     details:
       "Don't worry if you've never done a case interview before! We provide case workshops to help you prepare. We're looking for structured thinking and creative problem-solving, not perfect answers.",
   },
   {
     title: "Second Round Interview",
-    description: "Similar to the first round interview, this interview will mix technicals and behaviorals to hollistically evaluate you",
+    description:
+      "Similar to the first round interview, this interview will mix technicals and behaviorals to hollistically evaluate you",
     icon: <Briefcase className="h-10 w-10 text-apex-red" />,
     details:
       "Be sure to showcase your personality, as well as your problem solving skills! Remember, there are no right answers.",
   },
   {
     title: "Final Decision",
-    description: "Selected candidates will receive an offer to join Apex Consulting Group.",
+    description: "Selected candidates will receive an offer to join APEX Consulting Group.",
     icon: <Award className="h-10 w-10 text-apex-red" />,
     details:
       "We evaluate candidates holistically, considering your application, interviews, and interactions throughout the recruitment process. Decisions are typically made within a week after final interviews.",
@@ -157,56 +167,60 @@ const applicationSteps = [
 
 // FAQ data
 
-  const faqItems = [
-    {
-      question: "Do I need prior consulting experience to join APEX?",
-      answer:
-        "No prior consulting experience is required! We welcome students from all backgrounds and majors. Our training program will teach you everything you need to know about consulting.",
-    },
-    {
-      question: "What is the time commitment for APEX members?",
-      answer:
-        "APEX members typically dedicate 5-10 hours per week to the organization. This includes client project work, professional development sessions, and social events. The time commitment may vary throughout the semester based on project deadlines.",
-    },
-    {
-      question: "Which majors are eligible to apply?",
-      answer:
-        "Students from all majors are encouraged to apply! We value diverse perspectives and have members from the school of business, engineering, LSA, etc. What matters most is your interest in consulting and commitment to professional growth.",
-    },
-    {
-      question: "When can I apply to join APEX?",
-      answer:
-        "We recruit new members at the beginning of each fall and winter semester. Check our recruitment timeline for specific dates and deadlines for the current recruitment cycle.",
-    },
-    {
-      question: "What types of clients does APEX work with?",
-      answer:
-        "APEX works with a diverse range of clients, including local businesses, startups, non-profits, and larger corporations. Our projects span various industries and focus areas, giving members exposure to different business challenges and environments.",
-    },
-    {
-      question: "How can I prepare for the case interview?",
-      answer:
-        "We host case workshops during the recruitment process to help candidates prepare. Additionally, you can practice with case interview books, online resources, or by forming case groups with friends. Remember, we're looking for your approach to problem-solving, not necessarily perfect answers.",
-    },
-  ]
+const faqItems = [
+  {
+    question: "Do I need prior consulting experience to join APEX?",
+    answer:
+      "No prior consulting experience is required! We welcome students from all backgrounds and majors. Our training program will teach you everything you need to know about consulting.",
+  },
+  {
+    question: "What is the time commitment for APEX members?",
+    answer:
+      "APEX members typically dedicate 5-10 hours per week to the organization. This includes client project work, professional development sessions, and social events. The time commitment may vary throughout the semester based on project deadlines.",
+  },
+  {
+    question: "Which majors are eligible to apply?",
+    answer:
+      "Students from all majors are encouraged to apply! We value diverse perspectives and have members from the school of business, engineering, LSA, etc. What matters most is your interest in consulting and commitment to professional growth.",
+  },
+  {
+    question: "When can I apply to join APEX?",
+    answer:
+      "We recruit new members at the beginning of each fall and winter semester. Check our recruitment timeline for specific dates and deadlines for the current recruitment cycle.",
+  },
+  {
+    question: "What types of clients does APEX work with?",
+    answer:
+      "APEX works with a diverse range of clients, including local businesses, startups, non-profits, and larger corporations. Our projects span various industries and focus areas, giving members exposure to different business challenges and environments.",
+  },
+  {
+    question: "How can I prepare for the case interview?",
+    answer:
+      "We host case workshops during the recruitment process to help candidates prepare. Additionally, you can practice with case interview books, online resources, or by forming case groups with friends. Remember, we're looking for your approach to problem-solving, not necessarily perfect answers.",
+  },
+]
 
 // Community images for carousel
 const communityImages = [
   {
-    src: "/placeholder.svg?height=600&width=800",
-    alt: "APEX team members at social event",
+    src: "/images/join/apex-group.JPG",
+    alt: "APEX team members at headshots",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
-    alt: "APEX retreat activities",
+    src: "/images/join/chi.JPEG",
+    alt: "APEX team members during our annual Chicago trip",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
-    alt: "APEX members volunteering",
+    src: "/images/join/newbieparty.JPEG",
+    alt: "APEX new analyst welcome celebration",
   },
   {
-    src: "/placeholder.svg?height=600&width=800",
-    alt: "APEX end of semester celebration",
+    src: "/images/join/retreat.JPEG",
+    alt: "APEX fall retreat",
+  },
+  {
+    src: "/images/join/speeddating.JPEG",
+    alt: "APEX during recruitment events",
   },
 ]
 
@@ -309,10 +323,15 @@ export default function JoinPage() {
       <PageHeader
         title="Join Our Team"
         descriptions={[
-          "Apex Consulting Group recruits new members at the beginning of each semester.",
+          "APEX Consulting Group recruits new members at the beginning of each semester.",
           "Follow our recruitment timeline to learn how to join our team.",
           "We welcome students from all majors and backgrounds who are passionate about consulting.",
         ]}
+        ctaButton={{
+          text: "Apply Now",
+          href: "https://docs.google.com/forms/d/e/1FAIpQLSf6rtQgTm84YtamSkkP38ruzoLwPCTaRcb1BvZRWw6EuQADLg/closedform",
+          variant: "default",
+        }}
       />
 
       <div className="py-10 md:py-16">
@@ -387,7 +406,7 @@ export default function JoinPage() {
                             </div>
                             <div className="flex items-center gap-1 text-muted-foreground">
                               <MapPin className="h-4 w-4" />
-                              {event.location}
+                              {event.location ? <> {event.location} </> : event.location}
                             </div>
                           </div>
                         </div>
@@ -399,7 +418,7 @@ export default function JoinPage() {
                               Currently Active
                             </div>
                           ) : (
-                            <Button variant="outline" className="text-sm" asChild>
+                            <Button variant="outline" className="text-sm border-black dark:border-white" asChild>
                               <a
                                 href={getCalendarLink(event)}
                                 target="_blank"
@@ -413,7 +432,35 @@ export default function JoinPage() {
                         </div>
                       </div>
 
-                      <p className="text-muted-foreground">{event.description}</p>
+                      <p className="text-muted-foreground">
+                        {event.linkInDescription ? (
+                          <>
+                            {event.description.replace(event.linkInDescription, "")}{" "}
+                            <a
+                              href={event.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-apex-red hover:underline inline-flex items-center gap-1"
+                            >
+                              {event.linkInDescription} <ArrowRight className="h-3 w-3" />
+                            </a>
+                          </>
+                        ) : event.url && event.linkText ? (
+                          <>
+                            {event.description}{" "}
+                            <a
+                              href={event.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-apex-red hover:underline inline-flex items-center gap-1"
+                            >
+                              {event.linkText} <ArrowRight className="h-3 w-3" />
+                            </a>
+                          </>
+                        ) : (
+                          event.description
+                        )}
+                      </p>
                     </CardContent>
                   </Card>
                 </div>
@@ -421,9 +468,9 @@ export default function JoinPage() {
             </div>
           </div>
 
-          {/* Why Join Apex - Redesigned with more visual appeal */}
+          {/* Why Join APEX - Redesigned with more visual appeal */}
           <div className="my-20">
-            <h2 className="text-2xl font-bold mb-8 text-center">Why Join Apex?</h2>
+            <h2 className="text-2xl font-bold mb-8 text-center">Why Join APEX?</h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="relative overflow-hidden rounded-xl">
@@ -573,7 +620,7 @@ export default function JoinPage() {
           </div>
 
           {/* FAQ Section */}
-          <div className="my-20">
+          <div id="faq" className="my-20">
             <h2 className="text-2xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
 
             <div className="max-w-3xl mx-auto">
