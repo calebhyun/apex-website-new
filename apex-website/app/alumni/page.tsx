@@ -89,7 +89,7 @@ const companyLogos = [
   { name: "Salesforce", image: "/images/placement/citadel.png" },
   { name: "AMEX", image: "/images/placement/amex.png" },
   { name: "Deutsche", image: "/images/placement/deutsche.jpg" },
-  { name: "Guggenheim", image: "/images/placement/guggenheim.jpg" },
+  { name: "Guggenheim", image: "/images/placement/guggenheim.jpeg" },
   { name: "Merril Lynch", image: "/images/placement/merril.png" },
   { name: "William Blair", image: "/images/placement/williamblair.jpg" },
   { name: "IBM", image: "/images/placement/ibm.png" },
