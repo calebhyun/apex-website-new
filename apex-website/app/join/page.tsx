@@ -27,7 +27,7 @@ import {
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import PageHeader from "@/components/page-header"
-import { generateGoogleCalendarLink, parseEventDate, parseEventTime } from "@/utils/calendar"
+import { generateGoogleCalendarLink } from "@/utils/calendar"
 
 // Timeline data with minimalist icons instead of emojis
 const timelineEvents = [
@@ -37,7 +37,7 @@ const timelineEvents = [
     date: "Thursday January 16, 2025",
     time: "6:00 PM - 9:00 PM",
     location: "Ross Basement - Table 41",
-    description: "Learn about APEX Consulting Group and other student organizations on campus",
+    description: "Learn about Apex Consulting Group and other student organizations on campus",
     active: false,
     icon: <Building className="h-5 w-5" />,
   },
@@ -47,7 +47,7 @@ const timelineEvents = [
     date: "Friday, January 17, 2025",
     time: "12:00 PM",
     location: "Online",
-    description: "Applications for APEX Consulting Group will be available on our website.",
+    description: "Applications for Apex Consulting Group will be available on our website.",
     url: "https://docs.google.com/forms/d/e/1FAIpQLSf6rtQgTm84YtamSkkP38ruzoLwPCTaRcb1BvZRWw6EuQADLg/closedform",
     linkText: "Apply here",
     active: false,
@@ -59,7 +59,7 @@ const timelineEvents = [
     date: "Sunday, January 17, 2025",
     time: "7:00 PM - 8:30 PM",
     location: "Blau Colloquium",
-    description: "Learn more about APEX Consulting Group, our projects, and the application process",
+    description: "Learn more about Apex Consulting Group, our projects, and the application process",
     active: false,
     icon: <Users className="h-5 w-5" />,
   },
@@ -158,7 +158,7 @@ const applicationSteps = [
   },
   {
     title: "Final Decision",
-    description: "Selected candidates will receive an offer to join APEX Consulting Group.",
+    description: "Selected candidates will receive an offer to join Apex Consulting Group.",
     icon: <Award className="h-10 w-10 text-apex-red" />,
     details:
       "We evaluate candidates holistically, considering your application, interviews, and interactions throughout the recruitment process. Decisions are typically made within a week after final interviews.",
@@ -294,27 +294,26 @@ export default function JoinPage() {
 
   // Function to generate Google Calendar link for an event
   const getCalendarLink = (event: (typeof timelineEvents)[0]) => {
-    // Parse the date and time
-    const startDate = parseEventDate(event.date)
+    // Check if this is an event that should be all-day
+    const isAllDayEvent = event.id === "application-release" || event.id === "app-due"
 
-    // Handle time ranges and various time formats
-    let startTime = ""
-    let endTime = ""
-
-    if (event.time && event.time !== "Various Times") {
-      const times = parseEventTime(event.time)
-      startTime = times.startTime
-      endTime = times.endTime
-    }
-
-    // Generate the calendar link
     return generateGoogleCalendarLink({
       title: `APEX Consulting: ${event.title}`,
-      startDate,
-      startTime,
-      endTime,
+      startDate: event.date,
+      // Only pass time information if it's not an all-day event
+      startTime: isAllDayEvent
+        ? undefined
+        : event.time && event.time.includes("-")
+          ? event.time.split("-")[0].trim()
+          : event.time,
+      endTime: isAllDayEvent
+        ? undefined
+        : event.time && event.time.includes("-")
+          ? event.time.split("-")[1].trim()
+          : undefined,
       location: event.location,
       description: event.description,
+      isAllDay: isAllDayEvent,
     })
   }
 
@@ -323,12 +322,12 @@ export default function JoinPage() {
       <PageHeader
         title="Join Our Team"
         descriptions={[
-          "APEX Consulting Group recruits new members at the beginning of each semester.",
+          "Apex Consulting Group recruits new members at the beginning of each semester.",
           "Follow our recruitment timeline to learn how to join our team.",
           "We welcome students from all majors and backgrounds who are passionate about consulting.",
         ]}
         ctaButton={{
-          text: "Apply Now",
+          text: "APPLY NOW",
           href: "https://docs.google.com/forms/d/e/1FAIpQLSf6rtQgTm84YtamSkkP38ruzoLwPCTaRcb1BvZRWw6EuQADLg/closedform",
           variant: "default",
         }}
@@ -468,9 +467,9 @@ export default function JoinPage() {
             </div>
           </div>
 
-          {/* Why Join APEX - Redesigned with more visual appeal */}
+          {/* Why Join Apex - Redesigned with more visual appeal */}
           <div className="my-20">
-            <h2 className="text-2xl font-bold mb-8 text-center">Why Join APEX?</h2>
+            <h2 className="text-2xl font-bold mb-8 text-center">Why Join Apex?</h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="relative overflow-hidden rounded-xl">

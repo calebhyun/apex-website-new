@@ -68,24 +68,36 @@ const testimonials = [
 
 // Company logos where alumni work
 const companyLogos = [
-  { name: "McKinsey & Company", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Boston Consulting Group", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Bain & Company", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Deloitte", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Goldman Sachs", image: "/placeholder.svg?height=80&width=200" },
-  { name: "J.P. Morgan", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Google", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Amazon", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Microsoft", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Apple", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Meta", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Netflix", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Salesforce", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Adobe", image: "/placeholder.svg?height=80&width=200" },
-  { name: "IBM", image: "/placeholder.svg?height=80&width=200" },
-  { name: "Accenture", image: "/placeholder.svg?height=80&width=200" },
-  { name: "KPMG", image: "/placeholder.svg?height=80&width=200" },
-  { name: "EY", image: "/placeholder.svg?height=80&width=200" },
+  { name: "McKinsey", image: "/images/placement/mckinsey.png" },
+  { name: "BCG", image: "/images/placement/bcg.png" },
+  { name: "Bain", image: "/images/placement/bain.jpg" },
+  { name: "PWC", image: "/images/placement/pwc.png" },
+  { name: "Deloitte", image: "/images/placement/deloitte.png" },
+  { name: "KPMG", image: "/images/placement/kpmg.png" },
+  { name: "EY", image: "/images/placement/ey.webp" },
+  { name: "Accenture", image: "/images/placement/accenture.jpg" },
+  { name: "Strategy&", image: "/images/placement/strategy&.png" },
+  { name: "JP Morgan", image: "/images/placement/jpmorgan.png" },
+  { name: "Goldman", image: "/images/placement/goldman.png" },
+  { name: "Morgan Stanley", image: "/images/placement/morganstanley.png" },
+  { name: "Citi", image: "/images/placement/citi.png" },
+  { name: "Google", image: "/images/placement/google.png" },
+  { name: "Meta", image: "/images/placement/meta.png" },
+  { name: "Amazon", image: "/images/placement/amazon.png" },
+  { name: "Microsoft", image: "/images/placement/microsoft.png" },
+  { name: "Capital One", image: "/images/placement/capitalone.png" },
+  { name: "Salesforce", image: "/images/placement/citadel.png" },
+  { name: "AMEX", image: "/images/placement/amex.png" },
+  { name: "Deutsche", image: "/images/placement/deutsche.jpg" },
+  { name: "Guggenheim", image: "/images/placement/guggenheim.jpg" },
+  { name: "Merril Lynch", image: "/images/placement/merril.png" },
+  { name: "William Blair", image: "/images/placement/williamblair.jpg" },
+  { name: "IBM", image: "/images/placement/ibm.png" },
+  { name: "Citadel", image: "/images/placement/citadel.png" },
+  { name: "Coca Cola", image: "/images/placement/cocacola.png" },
+  { name: "NASA", image: "/images/placement/nasa.png" },
+  { name: "Dow Jones", image: "/images/placement/dow.png" },
+ 
 ]
 
 export default function AlumniPage() {
@@ -127,7 +139,7 @@ export default function AlumniPage() {
     const logoContainer = logoContainerRef.current
     if (!logoContainer) return
 
-    const scrollSpeed = 0.5
+    const scrollSpeed = 2
     let animationFrameId: number
     let scrollPos = 0
 
@@ -189,7 +201,7 @@ export default function AlumniPage() {
                     </div>
                   ))}
 
-                  {/* Duplicate logos for seamless scrolling */}
+                  {/* Duplicate logos on scroll */}
                   {companyLogos.map((logo, index) => (
                     <div
                       key={`logo-2-${index}`}
@@ -292,13 +304,13 @@ export default function AlumniPage() {
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">85%</div>
-                  <p className="text-sm">of our alumni work at Fortune 500 companies</p>
+                  <p className="text-sm">of our alumni work at Fortune 500 companies **maybe use locations or smth</p>
                 </CardContent>
               </Card>
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">$95K+</div>
-                  <p className="text-sm">average starting salary</p>
+                  <p className="text-sm">average starting salary ***diff stat!!</p>
                 </CardContent>
               </Card>
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
@@ -309,8 +321,8 @@ export default function AlumniPage() {
               </Card>
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
-                  <div className="text-4xl font-bold mb-2">95%</div>
-                  <p className="text-sm">job placement rate within 3 months</p>
+                  <div className="text-4xl font-bold mb-2">100%</div>
+                  <p className="text-sm">job placement rate upon graduation</p>
                 </CardContent>
               </Card>
             </div>
