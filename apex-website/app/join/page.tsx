@@ -322,7 +322,7 @@ export default function JoinPage() {
       <PageHeader
         title="Join Our Team"
         descriptions={[
-          "Apex Consulting Group recruits new members at the beginning of each semester.",
+          "APEX Consulting Group recruits new members at the beginning of each semester.",
           "Follow our recruitment timeline to learn how to join our team.",
           "We welcome students from all majors and backgrounds who are passionate about consulting.",
         ]}

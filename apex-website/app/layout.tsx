@@ -8,7 +8,7 @@ import EnhancedFooter from "@/components/enhanced-footer"
 import { ThemeProvider } from "@/components/theme-provider"
 
 
-// Load Inter and Dancing Script fonts (from our original design)
+// Load Inter and Dancing Script fonts
 const inter = Inter({ subsets: ["latin"] })
 const dancingScript = Dancing_Script({
   subsets: ["latin"],
@@ -18,6 +18,9 @@ const dancingScript = Dancing_Script({
 export const metadata: Metadata = {
   title: "Apex Consulting Group",
   description: "University of Michigan's Premier Consulting Group",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
