@@ -139,7 +139,7 @@ export default function AlumniPage() {
     const logoContainer = logoContainerRef.current
     if (!logoContainer) return
 
-    const scrollSpeed = 2
+    const scrollSpeed = 1.5
     let animationFrameId: number
     let scrollPos = 0
 
