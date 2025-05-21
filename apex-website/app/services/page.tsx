@@ -71,11 +71,11 @@ const services = [
     ],
   },
   {
-    id: "supply-chain",
-    title: "Supply Chain",
+    id: "process-optimization",
+    title: "Process Optimization",
     icon: <Puzzle className="h-5 w-5" />,
     description:
-      "We help businesses optimize their supply chain operations to improve efficiency, reduce costs, and enhance customer satisfaction.",
+      "We help businesses optimize their internal operations to improve efficiency, reduce costs, and enhance customer satisfaction.",
     projects: [
       {
         id: "manufacturing-startup",
@@ -258,22 +258,25 @@ const services = [
       "We help businesses develop and implement effective business strategies to achieve their long-term goals and objectives.",
     projects: [
       {
-        id: "family-business",
-        title: "Family-Owned Food Manufacturer",
+        id: "healthcare-tech",
+        title: "Healthcare Technology Startup",
         clientOverview:
-          "A second-generation family-owned business in the specialty food manufacturing industry with 30+ years of history, facing changing market dynamics and succession planning challenges.",
+          "Healthcare tech startup that enables secure, patient-centered data sharing and digital health research",
         problem:
-          "The client needed strategic direction for their next phase of growth amid changing consumer preferences, new distribution channels, and increasing competition from venture-backed startups in their space.",
+          "The client approached APEX without a standardized pricing model, relying on manual quotes for each customer, resulting in delayed estimates and client confusion over pricing rationale.",
         solution:
-          "We created a 5-year strategic plan with clear milestones and an implementation roadmap. This included diversification strategies, digital transformation initiatives, and organizational restructuring to support future growth.",
+          "APEX employed a three-pronged approach—background research, pricing model development, and testing/recommendation. The team began by analyzing the client’s complex product portfolio and current pricing practices, then studied competitor case studies, customer data, and conducted expert interviews to assess industry trends. Based on these insights, APEX developed a comprehensive pricing model and a standardized calculator for the client’s website.",
         deliverables: [
-          "Comprehensive SWOT analysis and market positioning assessment",
-          "5-year strategic plan with detailed implementation roadmap",
-          "Organizational design recommendations and capability gap analysis",
-          "Digital transformation strategy and technology stack recommendations",
-          "Succession planning framework and leadership development plan",
+          "5 Annotated Competitor Expert Interview Transcripts ",
+          "Client and Competitor Case Studies",
+          "In-Depth Pricing Model Framework",
+          "Product Bundling Based on Accrued Client Value and Cost Incurred",
+          "2 Interactive Figma Mockups Displaying Website Implementation",
+          "Standardized Pricing Calculator Framework",
+          "Implementation Timeline and Feasibility Assessment",
+          "Risks and Mitigation Plan"
         ],
-        semester: "W23",
+        semester: "F24",
       },
       {
         id: "nonprofit-organization",
@@ -333,11 +336,11 @@ export default function ServicesPage() {
   const [activeTab, setActiveTab] = useState("marketing")
   const [activeProject, setActiveProject] = useState<Record<string, string>>({
     marketing: "retail-chain",
-    "supply-chain": "manufacturing-startup",
+    "process-optimization": "manufacturing-startup",
     "data-analytics": "ecommerce-platform",
     "market-research": "tech-startup",
     growth: "saas-company",
-    strategy: "family-business",
+    strategy: "healthcare-tech",
   })
   const [showDropdown, setShowDropdown] = useState<string | null>(null)
 
