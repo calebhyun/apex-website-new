@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Linkedin, Mail } from "lucide-react"
 import PageHeader from "@/components/page-header"
 
-// Sample team data - replace with actual data
+// Team Data
 const teamMembers = {
   eboard: [
     {
@@ -136,42 +136,42 @@ const teamMembers = {
     {
     name: "Chris Munroe",
     role: "Business Analyst",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/headshots/BA/ChrisM.jpg",
     linkedin: "https://www.linkedin.com/in/chrismunroe12/",
     email: "cmunroe@umich.edu",
     },
     {
       name: "David Gonzalez",
       role: "Business Analyst",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/headshots/BA/DavidG.jpg",
       linkedin: "https://www.linkedin.com/in/davidgzzmtz/",
       email: "davidgmz@umich.edu",
     },
     {
       name: "Katelyn Knickerbocker",
       role: "Business Analyst",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/headshots/BA/KatelynK.jpg",
       linkedin: "https://www.linkedin.com/in/katelyn-knickerbocker-75103b332/",
       email: "kkately@umich.edu",
     },
     {
       name: "Jessica Youn",
       role: "Business Analyst",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/headshots/BA/JessicaY.jpg",
       linkedin: "https://www.linkedin.com/in/jessicayoun/",
       email: "jyoun@umich.edu",
     },
     {
       name: "Jiali Goodwin",
       role: "Business Analyst",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/headshots/BA/JialiG.jpeg",
       linkedin: "https://www.linkedin.com/in/jiali-goodwin/",
       email: "jialig@umich.edu",
     },
     {
       name: "Mark Bokas",
       role: "Business Analyst",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/headshots/BA/MarkB.jpg",
       linkedin: "https://www.linkedin.com/in/markbokas/",
       email: "bokas@umich.edu",
     },
@@ -185,7 +185,7 @@ const teamMembers = {
     {
       name: "Reagan Masek",
       role: "Business Analyst",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/headshots/BA/ReaganM.jpg",
       linkedin: "https://www.linkedin.com/in/reagan-masek/",
       email: "rmasek@umich.edu",
     },
@@ -199,7 +199,7 @@ const teamMembers = {
     {
       name: "Sam Pelter",
       role: "Business Analyst",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/headshots/BA/SamP.jpg",
       linkedin: "https://www.linkedin.com/in/samanthapelter/",
       email: "spelter@umich.edu",
     },
@@ -213,7 +213,7 @@ const teamMembers = {
     {
       name: "Vansh Baxi",
       role: "Business Analyst",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/headshots/BA/VanshB.jpeg",
       linkedin: "https://www.linkedin.com/in/vanshbaxi/",
       email: "vbaxi@umich.edu",
     },
@@ -307,7 +307,7 @@ export default function TeamPage() {
                   currentRole === "eboard" ? "bg-apex-red text-white shadow-sm" : ""
                 }`}
               >
-                EBoard
+                Executive Board
               </button>
               <button
                 onClick={() => setCurrentRole("projectManagers")}

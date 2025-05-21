@@ -4,16 +4,17 @@ import { useEffect, useRef, useState } from "react"
 import { useInView } from "react-intersection-observer"
 import { cn } from "@/lib/utils"
 import { Card, CardContent } from "@/components/ui/card"
-import { BarChart3, Building, GraduationCap, Users } from "lucide-react"
+import { BarChart3, Building, GraduationCap, Users, CalendarCheck, LibraryBig } from "lucide-react"
 import PresidentsWelcome from "@/components/presidents-welcome"
 
 export default function ScrollSection() {
   // Stats data
   const stats = [
-    { icon: Users, value: "100+", label: "Consultants Trained" },
-    { icon: Building, value: "50+", label: "Client Projects" },
-    { icon: GraduationCap, value: "200+", label: "Alumni Network" },
-    { icon: BarChart3, value: "100%", label: "Placement Rate" },
+    { icon: Users, value: "50+", label: "Members" },
+    { icon: GraduationCap, value: "100+", label: "Alumni" },
+    { icon: Building, value: "130+", label: "Businesses Served" },
+    { icon: CalendarCheck, value: "13", label: "Years of Experience" },
+    { icon: LibraryBig, value: "12+", label: "Different Majors" },
   ]
 
   // Welcome section with fade-in animation
@@ -115,7 +116,6 @@ export default function ScrollSection() {
       </section>
 
       {/* Hype Video Section */}
-      {/* Hype Video Section */}
       <section
         ref={videoRef}
         className={cn(
@@ -152,13 +152,13 @@ export default function ScrollSection() {
         )}
       >
         <div className="container px-4 md:px-6">
-          <div className="max-w-4xl mx-auto text-center space-y-10">
+          <div className="max-w-5xl mx-auto text-center space-y-10">
             <div>
               <h2 className="text-3xl md:text-5xl font-bold tracking-tighter">Our Impact</h2>
               <div className="h-1 w-20 bg-apex-red mx-auto mt-4"></div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-6 md:gap-10">
               {stats.map((stat, index) => (
                 <Card
                   key={index}

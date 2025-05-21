@@ -378,7 +378,7 @@ export default function ServicesPage() {
 
       <div className="py-10 md:py-16">
         <div className="container px-4 md:px-6">
-          {/* Animated Process Section - MOVED TO TOP */}
+          {/* Animated Process Section */}
           <div className="mb-24">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-2xl font-bold mb-4">Our Consulting Process</h2>
@@ -427,12 +427,12 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* Case Studies Section - MOVED BELOW PROCESS */}
+          {/* Past Projects */}
           <div className="mt-12">
             <div className="text-center max-w-3xl mx-auto mb-12">
-              <h2 className="text-2xl font-bold mb-4">Our Case Studies</h2>
+              <h2 className="text-2xl font-bold mb-4">Our Past Projects</h2>
               <p className="text-muted-foreground">
-                From strategic initiatives to technical projects, explore our diverse portfolio of client work.
+                From strategic initiatives to technical projects, explore our diverse portfolio of client work. Our consultants are also equipped to address challenges beyond these areas, bringing versatile expertise to meet your evolving needs.
               </p>
             </div>
 

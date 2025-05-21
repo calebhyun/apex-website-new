@@ -327,7 +327,7 @@ export default function JoinPage() {
           "We welcome students from all majors and backgrounds who are passionate about consulting.",
         ]}
         ctaButton={{
-          text: "APPLY NOW",
+          text: "Apply Now",
           href: "https://docs.google.com/forms/d/e/1FAIpQLSf6rtQgTm84YtamSkkP38ruzoLwPCTaRcb1BvZRWw6EuQADLg/closedform",
           variant: "default",
         }}
