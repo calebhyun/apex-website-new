@@ -23,7 +23,7 @@ import {
 import PageHeader from "@/components/page-header"
 import { motion, AnimatePresence } from "framer-motion"
 
-// Sample service data with multiple projects per service
+//Service Data
 const services = [
   {
     id: "marketing",
@@ -33,8 +33,8 @@ const services = [
       "Our marketing consulting services help businesses develop and implement effective marketing strategies to reach their target audience and achieve their business goals.",
     projects: [
       {
-        id: "retail-chain",
-        title: "Regional Retail Chain",
+        id: "wnba-team",
+        title: "WNBA Sports Team",
         clientOverview:
           "A regional retail chain with 15+ locations across the Midwest, struggling with declining foot traffic and sales in their physical stores.",
         problem:
@@ -48,26 +48,9 @@ const services = [
           "Customer journey mapping across digital and physical touchpoints",
           "ROI measurement framework and KPI dashboard",
         ],
-        semester: "F23",
-      },
-      {
-        id: "food-startup",
-        title: "Food Delivery Startup",
-        clientOverview:
-          "An emerging food delivery startup targeting college campuses, facing challenges with customer acquisition and retention.",
-        problem:
-          "The client had a strong product but struggled with high customer acquisition costs and low retention rates. They needed a cost-effective marketing strategy to build brand awareness and loyalty among college students.",
-        solution:
-          "We developed a campus ambassador program and guerrilla marketing strategy that leveraged student networks and campus events. We also created a referral program and loyalty system to improve retention.",
-        deliverables: [
-          "Campus ambassador program structure and recruitment guide",
-          "Guerrilla marketing campaign calendar for key campus events",
-          "Social media content strategy focused on user-generated content",
-          "Referral program design with incentive structure",
-          "Customer retention analysis and loyalty program recommendations",
-        ],
         semester: "W24",
       },
+    
     ],
   },
   {
@@ -78,8 +61,8 @@ const services = [
       "We help businesses optimize their internal operations to improve efficiency, reduce costs, and enhance customer satisfaction.",
     projects: [
       {
-        id: "manufacturing-startup",
-        title: "Sustainable Manufacturing Startup",
+        id: "grocery-store",
+        title: "Grocery Store Chain",
         clientOverview:
           "An emerging manufacturing startup producing sustainable home goods, facing challenges with scaling production while maintaining quality and managing costs.",
         problem:
@@ -93,25 +76,7 @@ const services = [
           "Process optimization roadmap with prioritized initiatives",
           "Supply chain risk management strategy",
         ],
-        semester: "W24",
-      },
-      {
-        id: "grocery-chain",
-        title: "Regional Grocery Chain",
-        clientOverview:
-          "A family-owned grocery chain with 12 locations facing increased competition from national chains and online grocery services.",
-        problem:
-          "The client was experiencing inventory management issues, with frequent stockouts of popular items and excess inventory of slow-moving products. Their outdated supply chain processes were increasing costs and affecting customer satisfaction.",
-        solution:
-          "We implemented a demand forecasting system and just-in-time inventory management approach. We also optimized their distribution network and negotiated better terms with key suppliers.",
-        deliverables: [
-          "Demand forecasting model with seasonal adjustments",
-          "Inventory optimization strategy with reorder point recommendations",
-          "Distribution network analysis and optimization plan",
-          "Supplier negotiation strategy and key performance indicators",
-          "Staff training program for new inventory management processes",
-        ],
-        semester: "F22",
+        semester: "W25",
       },
     ],
   },
@@ -120,44 +85,27 @@ const services = [
     title: "Data Analytics",
     icon: <BarChart4 className="h-5 w-5" />,
     description:
-      "Our data analytics services help businesses leverage their data to gain insights, make informed decisions, and drive business growth.",
+      "Our expertise in both predicted and regressive data analysis help businesses leverage their data to gain insights, make informed decisions, and drive business growth.",
     projects: [
       {
-        id: "ecommerce-platform",
-        title: "E-commerce Platform",
+        id: "ev-oem",
+        title: "Electric Vehicle OEM",
         clientOverview:
-          "A mid-sized e-commerce platform specializing in niche hobby products with over 50,000 monthly active users and 10,000+ SKUs.",
+          "Multi-billion dollar USA-based electric vehicle OEM",
         problem:
-          "Despite collecting vast amounts of customer data, the client was unable to effectively use this information for personalization. Their generic approach to marketing and product recommendations was resulting in low conversion rates and decreasing customer engagement.",
+          "The client approached APEX with concerns regarding inefficiencies within a critical aspect of their supply chain. They required a data-driven solution to forecast the time and cost of key process actions by leveraging historical data. APEX was tasked with building a predictive model to support informed decision-making. .",
         solution:
-          "We implemented advanced analytics tools and developed a customer segmentation model based on purchasing behavior, browsing patterns, and demographic information. This enabled targeted marketing campaigns and personalized product recommendations.",
+          "Leveraging Python data analysis libraries, APEX cleaned and merged two datasets totaling over 100,000 rows of historical data.The team conducted an exploratory data analysis to uncover drivers of cost and time variability in the process, while also designing two custom machine learning models that achieved 90% prediction accuracy.",
         deliverables: [
-          "Data architecture assessment and optimization plan",
-          "Customer segmentation model with actionable personas",
-          "Predictive analytics framework for product recommendations",
-          "Interactive dashboard for real-time performance monitoring",
-          "Data-driven marketing playbook with campaign templates",
+          "Two machine learning models (Gradient Boosting for cost prediction, Random Forest for time prediction), each achieving over 90% accuracy on key supply chain changes",
+          "A scalable, modular framework to support seamless model updates as new data becomes available",
+          "A competitive landscape analysis detailing how industry leaders leverage machine learning in supply chains, supporting strategic recommendations",
+          "A detailed data dictionary documenting 40+ columns from the original dataset to ensure transparency and reproducibility",
+          "A suite of nine Python-based visualizations uncovering key trends driving cost and time variability",
         ],
-        semester: "F23",
+        semester: "W25",
       },
-      {
-        id: "healthcare-provider",
-        title: "Healthcare Provider Network",
-        clientOverview:
-          "A network of urgent care clinics seeking to optimize operations and improve patient satisfaction through data-driven insights.",
-        problem:
-          "The client had accumulated years of operational and patient data but lacked the analytical capabilities to extract meaningful insights. They were experiencing inconsistent wait times and resource allocation issues across their locations.",
-        solution:
-          "We developed a comprehensive analytics framework that integrated patient flow data, staffing information, and satisfaction metrics. This allowed for predictive modeling of peak times and optimal resource allocation.",
-        deliverables: [
-          "Integrated data warehouse architecture design",
-          "Patient flow analysis with peak time predictions",
-          "Staff scheduling optimization model",
-          "Real-time dashboard for clinic managers",
-          "Predictive analytics model for resource planning",
-        ],
-        semester: "W23",
-      },
+
     ],
   },
   {
@@ -168,8 +116,8 @@ const services = [
       "We provide comprehensive market research services to help businesses understand their target market, competitors, and industry trends.",
     projects: [
       {
-        id: "tech-startup",
-        title: "Healthcare Tech Startup",
+        id: "food-delivery",
+        title: "Food Delivery Service",
         clientOverview:
           "An early-stage technology startup developing an innovative SaaS solution for the healthcare industry, with seed funding but limited market validation.",
         problem:
@@ -183,25 +131,7 @@ const services = [
           "Feature prioritization framework based on customer value",
           "Go-to-market strategy with channel recommendations",
         ],
-        semester: "W24",
-      },
-      {
-        id: "fitness-brand",
-        title: "Fitness Equipment Brand",
-        clientOverview:
-          "An established fitness equipment manufacturer looking to expand into the home fitness market with a new product line.",
-        problem:
-          "The client needed to understand consumer preferences, price sensitivity, and competitive positioning in the rapidly evolving home fitness market before finalizing their product development and marketing strategy.",
-        solution:
-          "We conducted comprehensive market research including consumer surveys, focus groups, and competitive analysis. We also analyzed market trends and distribution channel opportunities to inform their market entry strategy.",
-        deliverables: [
-          "Consumer preference analysis with key product feature recommendations",
-          "Price sensitivity study and optimal price point analysis",
-          "Competitive positioning map and differentiation strategy",
-          "Distribution channel analysis and recommendations",
-          "Market sizing and growth projections by segment",
-        ],
-        semester: "F22",
+        semester: "F23",
       },
     ],
   },
@@ -213,8 +143,8 @@ const services = [
       "Our growth consulting services help businesses identify and capitalize on opportunities for expansion and revenue growth.",
     projects: [
       {
-        id: "saas-company",
-        title: "Project Management SaaS",
+        id: "ai-startup",
+        title: "B2B Voice AI Statup",
         clientOverview:
           "A SaaS company with a successful product in the project management space, experiencing stagnation after three years of initial growth and facing increased competition.",
         problem:
@@ -228,25 +158,7 @@ const services = [
           "Product roadmap for new market penetration",
           "Financial projections and resource allocation recommendations",
         ],
-        semester: "F22",
-      },
-      {
-        id: "local-restaurant",
-        title: "Restaurant Chain Expansion",
-        clientOverview:
-          "A successful local restaurant with two locations looking to expand regionally while maintaining their brand identity and food quality.",
-        problem:
-          "The client had achieved success with their existing locations but lacked a systematic approach to scaling their operations. They needed guidance on location selection, operational standardization, and financing options for expansion.",
-        solution:
-          "We developed a comprehensive expansion strategy that included location analysis, operational scaling, and financial planning. We also created systems to maintain consistency across locations while preserving their unique brand identity.",
-        deliverables: [
-          "Market analysis and location selection criteria",
-          "Operations manual and training program for new locations",
-          "Financial modeling and funding options analysis",
-          "Brand consistency guidelines and quality control systems",
-          "Phased expansion timeline with key milestones",
-        ],
-        semester: "W23",
+        semester: "W25",
       },
     ],
   },
@@ -263,9 +175,9 @@ const services = [
         clientOverview:
           "Healthcare tech startup that enables secure, patient-centered data sharing and digital health research",
         problem:
-          "The client approached APEX without a standardized pricing model, relying on manual quotes for each customer, resulting in delayed estimates and client confusion over pricing rationale.",
+          "The client approached APEX without a standardized pricing model, relying on manual quotes for each customer, resulting in delayed estimates and client confusion over pricing rationale. APEX was tasked with devising a data-backed, standardized calculator to streamline pricing across customers.",
         solution:
-          "APEX employed a three-pronged approach—background research, pricing model development, and testing/recommendation. The team began by analyzing the client’s complex product portfolio and current pricing practices, then studied competitor case studies, customer data, and conducted expert interviews to assess industry trends. Based on these insights, APEX developed a comprehensive pricing model and a standardized calculator for the client’s website.",
+          "APEX examined the client’s complex product portfolio and current pricing practices, studied competitor case studies, analyzed customer data, and conducted expert interviews to assess industry trends, ultimately developing a comprehensive pricing model and a standardized calculator for the client’s website.",
         deliverables: [
           "5 Annotated Competitor Expert Interview Transcripts ",
           "Client and Competitor Case Studies",
@@ -277,24 +189,6 @@ const services = [
           "Risks and Mitigation Plan"
         ],
         semester: "F24",
-      },
-      {
-        id: "nonprofit-organization",
-        title: "Educational Nonprofit",
-        clientOverview:
-          "A nonprofit organization focused on STEM education for underserved communities, seeking to expand their impact while ensuring financial sustainability.",
-        problem:
-          "The client had a successful program model but was struggling with funding diversification, operational efficiency, and measuring their impact effectively. They needed a strategic plan to scale their programs while building organizational capacity.",
-        solution:
-          "We developed a comprehensive strategic plan that included funding diversification, operational optimization, and impact measurement frameworks. We also created a board development strategy and volunteer management system.",
-        deliverables: [
-          "Funding diversification strategy with revenue stream analysis",
-          "Program scaling model with resource requirements",
-          "Impact measurement framework and reporting templates",
-          "Board development plan and governance recommendations",
-          "3-year strategic roadmap with implementation timeline",
-        ],
-        semester: "F23",
       },
     ],
   },
@@ -335,11 +229,11 @@ const processSteps = [
 export default function ServicesPage() {
   const [activeTab, setActiveTab] = useState("marketing")
   const [activeProject, setActiveProject] = useState<Record<string, string>>({
-    marketing: "retail-chain",
-    "process-optimization": "manufacturing-startup",
-    "data-analytics": "ecommerce-platform",
-    "market-research": "tech-startup",
-    growth: "saas-company",
+    marketing: "wnba-team",
+    "process-optimization": "grocery-store",
+    "data-analytics": "ev-oem",
+    "market-research": "food-delivery",
+    growth: "ai-startup",
     strategy: "healthcare-tech",
   })
   const [showDropdown, setShowDropdown] = useState<string | null>(null)
@@ -373,7 +267,7 @@ export default function ServicesPage() {
       <PageHeader
         title="Client Services"
         descriptions={[
-          "Apex Consulting Group offers a wide range of consulting services to help businesses achieve their goals.",
+          "APEX Consulting Group offers a wide range of consulting services to help businesses achieve their goals.",
           "Our team delivers data-driven, strategic solutions across various industries and business challenges.",
           "Explore our service areas and case studies to learn how we can help your organization succeed.",
         ]}
