@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Apex Consulting Group. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} APEX Consulting Group. All rights reserved.</p>
         </div>
       </div>
     </footer>

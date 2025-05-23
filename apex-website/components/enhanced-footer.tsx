@@ -82,7 +82,7 @@ export default function EnhancedFooter() {
 
                 <div className="mt-auto">
                   <Button asChild size="lg" className="bg-white text-apex-red hover:bg-white/90 rounded-xl">
-                    <Link href="/contact" className="flex items-center gap-2">
+                    <Link href="/services" className="flex items-center gap-2">
                       Work With Us <ArrowRight className="h-4 w-4" />
                     </Link>
                   </Button>

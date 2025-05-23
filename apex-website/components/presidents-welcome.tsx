@@ -44,7 +44,7 @@ const presidentImages = [
 
 export default function PresidentsWelcome({ className }: PresidentsWelcomeProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const [autoplay, setAutoplay] = useState(true)
+  const [autoplay, setAutoplay] = useState(false)
   const [touchStart, setTouchStart] = useState(0)
   const [touchEnd, setTouchEnd] = useState(0)
 
@@ -57,20 +57,6 @@ export default function PresidentsWelcome({ className }: PresidentsWelcomeProps)
     setCurrentImageIndex((prev) => (prev - 1 + presidentImages.length) % presidentImages.length)
   }
 
-  // Autoplay for carousel
-  useEffect(() => {
-    let interval: NodeJS.Timeout
-
-    if (autoplay) {
-      interval = setInterval(() => {
-        nextImage()
-      }, 5000) // Change image every 5 seconds
-    }
-
-    return () => {
-      clearInterval(interval)
-    }
-  }, [autoplay, currentImageIndex])
 
   // Touch handlers for mobile swipe
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -105,8 +91,6 @@ export default function PresidentsWelcome({ className }: PresidentsWelcomeProps)
           {/* Image Carousel */}
           <div
             className="relative mb-10 rounded-xl overflow-hidden shadow-lg"
-            onMouseEnter={() => setAutoplay(false)}
-            onMouseLeave={() => setAutoplay(true)}
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}

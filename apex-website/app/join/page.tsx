@@ -125,7 +125,7 @@ const timelineEvents = [
     date: "Friday, January 31, 2025 - Sunday, February 2, 2025",
     time: "Various Times",
     location: "Ross School of Business",
-    description: "Selected candidates will be invited for interviews.",
+    description: "Selected candidates will be invited for interviews",
     active: false,
     icon: <UserPlus className="h-5 w-5" />,
   },
@@ -135,7 +135,7 @@ const timelineEvents = [
 const applicationSteps = [
   {
     title: "Written Application",
-    description: "Submit your resume and answer a few short questions about your interest in consulting and APEX.",
+    description: "Submit your resume and answer a few short questions about your interest in consulting and APEX",
     icon: <FileText className="h-10 w-10 text-apex-red" />,
     details:
       "Our written application helps us understand your background, interests, and why you want to join APEX. Be authentic and showcase your unique experiences and perspectives.",
@@ -158,7 +158,7 @@ const applicationSteps = [
   },
   {
     title: "Final Decision",
-    description: "Selected candidates will receive an offer to join Apex Consulting Group.",
+    description: "Selected candidates will receive an offer to join APEX Consulting Group",
     icon: <Award className="h-10 w-10 text-apex-red" />,
     details:
       "We evaluate candidates holistically, considering your application, interviews, and interactions throughout the recruitment process. Decisions are typically made within a week after final interviews.",
@@ -631,6 +631,7 @@ export default function JoinPage() {
                   </AccordionItem>
                 ))}
               </Accordion>
+              </div>
 
               <div className="mt-8 text-center">
                 <p className="text-muted-foreground mb-4">Still have questions? We're happy to help!</p>
@@ -639,7 +640,7 @@ export default function JoinPage() {
                 </Button>
               </div>
             </div>
-          </div>
+
         </div>
       </div>
     </div>
