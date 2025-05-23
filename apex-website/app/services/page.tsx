@@ -134,9 +134,9 @@ const services = [
         clientOverview:
           "Multi-billion dollar USA-based electric vehicle OEM",
         problem:
-          "The client approached APEX with concerns regarding inefficiencies within a critical aspect of their supply chain. They required a data-driven solution to forecast the time and cost of key process actions by leveraging historical data. APEX was tasked with building a predictive model to support informed decision-making. .",
+          "The client approached APEX with concerns regarding inefficiencies within a critical aspect of their supply chain. They required a data-driven solution to forecast the time and cost of key process actions by leveraging historical data. APEX was tasked with building a predictive model to support informed decision-making.",
         solution:
-          "Leveraging Python data analysis libraries, APEX cleaned and merged two datasets totaling over 100,000 rows of historical data.The team conducted an exploratory data analysis to uncover drivers of cost and time variability in the process, while also designing two custom machine learning models that achieved 90% prediction accuracy.",
+          "Leveraging Python data analysis libraries, APEX cleaned and merged two datasets totaling over 100,000 rows of historical data. The team conducted an exploratory data analysis to uncover drivers of cost and time variability in the process, while also designing two custom machine learning models that achieved 90% prediction accuracy.",
         deliverables: [
           "Two machine learning models (Gradient Boosting for cost prediction, Random Forest for time prediction), each achieving over 90% accuracy on key supply chain changes",
           "A scalable, modular framework to support seamless model updates as new data becomes available",
@@ -275,8 +275,8 @@ const services = [
       "We help businesses develop and implement effective business strategies to achieve their long-term goals and objectives.",
     projects: [
       {
-        id: "healthcare-startup",
-        title: "Healthcare technology startup focused on enabling secure, patient-centered data sharing and advancing digital health research.",
+        id: "healthcare-tech",
+        title: "Healthcare Technology Startup",
         clientOverview:
           "Healthcare technology startup focused on enabling secure, patient-centered data sharing and advancing digital health research.",
         problem:

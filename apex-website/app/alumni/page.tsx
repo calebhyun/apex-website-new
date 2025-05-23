@@ -17,11 +17,13 @@ const testimonials = [
     year: "2024",
     image: "/images/alumni-testimonials/KushalS.jpg",
     quote:
-      "It's tough to describe the impact that APEX has had on my life - the community, the mentorship, the personal and professional development…they have all been foundations to my growth in college. Throughout my time in APEX, I was able to work with products I see every day, holistic health platforms seeking to fully remodel health accessibility, and meet amazing entrepreneurs across the country. Having the ability to work on real, impactful projects with driven and brilliant people motivated me to accelerate my learning and eventually continue the same trajectory in a post-grad consulting role. When I look back on my time in APEX, I remember the countless laughs, late-night bondings, and all the hard work we put in. The friends and memories made are truly unique and will always make APEX something I am forever grateful for!",
+      "It's tough to describe the impact that APEX has had on my life - the community, mentorship, personal and professional development have all been foundations of my growth in college. During my time in APEX, I got to work not only with products I use every day, but with new, innovative startups across the country. Collaborating on real, impactful projects with driven and brilliant people motivated me to accelerate my learning and continue that same trajectory in a post-grad consulting role. Looking back, I remember the countless laughs, late-night bondings, and all the hard work we put in. The friends and memories made are truly unique and will always make APEX something I am always grateful for!"
+
   },
+
   {
     name: "Tayla Jankowski",
-    role: "ASK SREEJAY WHAT HER OFFICIAL TITLE IS",
+    role: "Management Consulting Associate",
     company: "PwC",
     year: "2025",
     image: "/images/alumni-testimonials/TaylaJ.jpeg",
