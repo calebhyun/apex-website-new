@@ -13,7 +13,7 @@ const teamMembers = {
     {
       name: "Sajni Patel",
       role: "President",
-      image: "/images/headshots/Board/SajniP2.jpeg",
+      image: "/images/headshots/Board/SajniP.jpeg",
       linkedin: "https://www.linkedin.com/in/sajnipatelll/",
       email: "sajni@umich.edu",
     },

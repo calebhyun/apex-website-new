@@ -16,7 +16,7 @@ interface PresidentsWelcomeProps {
 // Sample images for the carousel - replace with actual images
 const presidentImages = [
   {
-    src: "/images/presidentswelcome/pic1.jpg",
+    src: "/images/presidentswelcome/pic1.jpeg",
     alt: "Sajni Patel, President of APEX Consulting",
     caption: "Sajni Patel, President of APEX Consulting",
   },
@@ -95,7 +95,7 @@ export default function PresidentsWelcome({ className }: PresidentsWelcomeProps)
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            <div className="aspect-[16/9] relative">
+            <div className="aspect-[16/11] relative">
               {presidentImages.map((image, index) => (
                 <div
                   key={index}
