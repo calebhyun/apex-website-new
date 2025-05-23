@@ -160,11 +160,12 @@ export default function ScrollSection() {
 
             <div className="grid grid-cols-3 md:grid-cols-5 gap-6 md:gap-10">
               {stats.map((stat, index) => (
-                <Card
-                  key={index}
-                  className="border-none shadow-lg overflow-hidden group hover:shadow-xl transition-all"
-                >
-                  <CardContent className="p-6 text-center relative z-10 group-hover:bg-apex-red group-hover:text-white transition-colors duration-300">
+                  <Card
+                    key={index}
+                    className="border-none shadow-lg overflow-hidden group hover:bg-apex-red hover:text-white hover:shadow-xl transition-all"
+                  >
+                    <CardContent className="p-6 text-center relative z-10 transition-colors duration-300">
+
                     <stat.icon className="h-8 w-8 mx-auto mb-2 text-apex-red group-hover:text-white transition-colors duration-300" />
                     <div className="text-3xl font-bold">
                       {statsInView ? (

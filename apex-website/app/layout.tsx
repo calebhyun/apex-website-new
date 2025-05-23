@@ -4,7 +4,7 @@ import { Inter, Dancing_Script } from "next/font/google"
 
 import "./globals.css"
 import Navbar from "@/components/navbar"
-import EnhancedFooter from "@/components/enhanced-footer"
+import EnhancedFooter from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 
 

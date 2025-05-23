@@ -22,6 +22,26 @@ const testimonials = [
   },
 
   {
+    name: "Jaden Douglas",
+    role: "Business Analyst",
+    company: "McKinsey & Company",
+    year: "2025",
+    image: "/images/alumni-testimonials/JadenD.jpg",
+    quote:
+      "APEX has seriously meant the world to me! I’ve grown so much — whether it was learning how to network or figuring out how to make an impactful slide deck, I feel more than ready to jump into my full-time consulting job. But honestly, the best part has been the memories I’ve made with my best friends — flag football, retreat, consulting club date parties — it’s been such a fun ride and I’m so grateful for it all!",
+  },
+
+  {
+    name: "Aarvi Shah",
+    role: "Product Manager",
+    company: "Salesforce",
+    year: "2024",
+    image: "/images/alumni-testimonials/AarviS.jpg",
+    quote:
+      "APEX was more than just a college organization–it’s family. The mentors I gained are still some of the first people I turn to even after graduation, and the friendships I made are lifelong. I credit so much of my personal and professional growth to this community. Working alongside some of the most driven, thoughtful people on campus sharpened my problem-solving and communication skills in ways the classroom never could, and gave me the confidence to navigate complex, ambiguous challenges after college. APEX set the standard for the kind of communities and work cultures I strive to build today.",
+  },
+
+  {
     name: "Tayla Jankowski",
     role: "Management Consulting Associate",
     company: "PwC",

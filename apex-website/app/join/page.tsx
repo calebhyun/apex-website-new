@@ -37,7 +37,7 @@ const timelineEvents = [
     date: "Thursday January 16, 2025",
     time: "6:00 PM - 9:00 PM",
     location: "Ross Basement - Table 41",
-    description: "Learn about Apex Consulting Group and other student organizations on campus",
+    description: "Learn about APEX Consulting Group and other student organizations on campus",
     active: false,
     icon: <Building className="h-5 w-5" />,
   },
@@ -47,7 +47,7 @@ const timelineEvents = [
     date: "Friday, January 17, 2025",
     time: "12:00 PM",
     location: "Online",
-    description: "Applications for Apex Consulting Group will be available on our website.",
+    description: "Applications for APEX Consulting Group will be available on our website.",
     url: "https://docs.google.com/forms/d/e/1FAIpQLSf6rtQgTm84YtamSkkP38ruzoLwPCTaRcb1BvZRWw6EuQADLg/closedform",
     linkText: "Apply here",
     active: false,
@@ -59,7 +59,7 @@ const timelineEvents = [
     date: "Sunday, January 17, 2025",
     time: "7:00 PM - 8:30 PM",
     location: "Blau Colloquium",
-    description: "Learn more about Apex Consulting Group, our projects, and the application process",
+    description: "Learn more about APEX Consulting Group, our projects, and the application process",
     active: false,
     icon: <Users className="h-5 w-5" />,
   },
@@ -467,9 +467,9 @@ export default function JoinPage() {
             </div>
           </div>
 
-          {/* Why Join Apex - Redesigned with more visual appeal */}
+          {/* Why Join APEX - Redesigned with more visual appeal */}
           <div className="my-20">
-            <h2 className="text-2xl font-bold mb-8 text-center">Why Join Apex?</h2>
+            <h2 className="text-2xl font-bold mb-8 text-center">Why Join APEX?</h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="relative overflow-hidden rounded-xl">
