@@ -8,62 +8,36 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
 import { cn } from "@/lib/utils"
 import PageHeader from "@/components/page-header"
 
-// Sample alumni testimonials
+// Alumni testimonials
 const testimonials = [
   {
-    name: "Alex Thompson",
-    role: "Senior Consultant",
-    company: "McKinsey & Company",
-    year: "2020",
-    image: "/placeholder.svg?height=300&width=300",
-    quote:
-      "APEX gave me the foundation I needed to succeed in consulting. The hands-on experience with real clients was invaluable, and the network I built continues to support me in my career.",
-  },
-  {
-    name: "Sophia Garcia",
-    role: "Associate",
-    company: "Boston Consulting Group",
-    year: "2019",
-    image: "/placeholder.svg?height=300&width=300",
-    quote:
-      "My time at APEX was transformative. The skills I developed through client projects and the mentorship I received from older members prepared me for the challenges of consulting at BCG.",
-  },
-  {
-    name: "Daniel Kim",
-    role: "Consultant",
+    name: "Kushal Sanjeev",
+    role: "Associate Consultant",
     company: "Bain & Company",
-    year: "2021",
-    image: "/placeholder.svg?height=300&width=300",
+    year: "2024",
+    image: "/images/alumni-testimonials/KushalS.jpg",
     quote:
-      "APEX was the highlight of my college experience. The community is incredibly supportive, and the professional development opportunities are unmatched. It's where I found my passion for consulting.",
+      "It's tough to describe the impact that APEX has had on my life - the community, the mentorship, the personal and professional development…they have all been foundations to my growth in college. Throughout my time in APEX, I was able to work with products I see every day, holistic health platforms seeking to fully remodel health accessibility, and meet amazing entrepreneurs across the country. Having the ability to work on real, impactful projects with driven and brilliant people motivated me to accelerate my learning and eventually continue the same trajectory in a post-grad consulting role. When I look back on my time in APEX, I remember the countless laughs, late-night bondings, and all the hard work we put in. The friends and memories made are truly unique and will always make APEX something I am forever grateful for!",
   },
   {
-    name: "Rachel Patel",
-    role: "Senior Associate",
-    company: "Deloitte",
-    year: "2020",
-    image: "/placeholder.svg?height=300&width=300",
+    name: "Tayla Jankowski",
+    role: "ASK SREEJAY WHAT HER OFFICIAL TITLE IS",
+    company: "PwC",
+    year: "2025",
+    image: "/images/alumni-testimonials/TaylaJ.jpeg",
     quote:
-      "Joining APEX was the best decision I made in college. The practical experience I gained working with real clients gave me a competitive edge in my interviews and prepared me for my role at Deloitte.",
+      "APEX was one of the most foundational parts of my college experience—from providing me exposure to real companies whose products I actually use, to working with some of the most intelligent people on campus—which made the work feel incredibly meaningful. I learned how technology and business can be used to solve problems in everything from wearable fitness technology, food delivery platforms, major league sports teams, and more. I currently work as a consultant in New York, and I can’t imagine my college experience or transition to a new city without APEX and the lifelong friends I made within it.",
   },
   {
-    name: "James Wilson",
-    role: "Investment Banking Analyst",
-    company: "Goldman Sachs",
-    year: "2018",
-    image: "/placeholder.svg?height=300&width=300",
+    name: "Ronith Ganjigunta",
+    role: "Product Manger",
+    company: "Capital One",
+    year: "2025",
+    image: "/images/alumni-testimonials/RonithG.jpg",
     quote:
-      "The analytical skills and attention to detail I developed at APEX have been crucial to my success in investment banking. The organization truly prepares you for high-pressure professional environments.",
-  },
-  {
-    name: "Emma Davis",
-    role: "Product Manager",
-    company: "J.P. Morgan",
-    year: "2019",
-    image: "/placeholder.svg?height=300&width=300",
-    quote:
-      "APEX taught me how to approach complex problems and communicate solutions effectively. These skills have been essential in my role as a Product Manager, where I bridge technical and business needs.",
-  },
+      "APEX has been one of the most meaningful parts of my college journey—equal parts community, challenge, and growth. Working on real client projects with my team gave me the chance to dive deep into product strategy, pitch tangible solutions, and learn what it means to collaborate under pressure. From late-night working sessions to spontaneous team dinners, the experience pushed me far beyond the classroom. I not only gained exposure to real-world problem-solving but also built friendships and memories that made every moment unforgettable. Looking back, it’s clear that the laughs, the hard work, and the incredible people shaped my understanding of product management and inspired me to keep growing.",
+    },
+
 ]
 
 // Company logos where alumni work
