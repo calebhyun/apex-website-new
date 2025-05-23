@@ -36,19 +36,40 @@ const services = [
         id: "wnba-team",
         title: "WNBA Sports Team",
         clientOverview:
-          "A regional retail chain with 15+ locations across the Midwest, struggling with declining foot traffic and sales in their physical stores.",
+          "WNBA Team aiming to boost fan engagement, promote DEI, and grow in a competitive urban market, playing in a downtown arena.",
         problem:
-          "The client was experiencing a 20% year-over-year decline in store visits and a 15% drop in sales. Their traditional marketing approach was failing to connect with younger demographics, and they lacked a cohesive digital strategy.",
+          "The client approached APEX Consulting to address three core marketing challenges: (1) increasing ticket sales, (2) encouraging earlier fan arrival at games, and (3) broadening general brand awareness. Despite a championship-winning season and high-profile new athletes, the franchise struggled to convert interest into full attendance or repeat engagement, particularly among younger and first-time fans.",
         solution:
-          "We developed a comprehensive omnichannel marketing strategy that integrated online and offline customer experiences. This included a revamped social media presence, location-based mobile marketing, and in-store digital experiences that bridged the physical-digital divide.",
+          "APEX deployed a comprehensive fan acquisition and retention strategy across multiple marketing channels. The team analyzed internal ticketing and demographic reports, conducted survey-based market research, and developed Ideal Customer Profiles (ICPs) to design tailored initiatives. APEX then evaluated the feasibility, cost, and ROI of over ten marketing tactics and provided the client with a toolkit for immediate implementation.",
         deliverables: [
-          "Comprehensive market research and customer segmentation analysis",
-          "Omnichannel marketing strategy with implementation roadmap",
-          "Social media content calendar and campaign guidelines",
-          "Customer journey mapping across digital and physical touchpoints",
-          "ROI measurement framework and KPI dashboard",
+          "Full campaign toolkit for influencer marketing with 50+ qualified local content creators",
+          "Corporate partnership pitch deck and 25+ target firms for group ticket packages and brand alignment",
+          "Revamped offseason social media content calendar with visual mockups and storytelling prompts",
+          "Recommendations on school partnerships, brand activation events, and athlete engagement",
+          "Cost-benefit analysis of transit and rideshare advertising with conversion modeling",
+          "Prioritized roadmap for phased implementation and measurable impact tracking",
         ],
-        semester: "W24",
+        semester: "Winter 2024",
+      },
+            {
+        id: "micro-mobility",
+        title: "Micro-Mobility Startup",
+        clientOverview:
+          "Leading micro-mobility company offering electric scooter rentals to urban commuters, students, and tourists via a global mobile platform.",
+        problem:
+              "The client needed to address two major gaps: slow customer acquisition and weak retention across key markets. Despite strong brand recognition, the company lacked a targeted marketing strategy to reach underrepresented demographics, and its ride frequency and loyalty metrics were falling short. The client needed actionable, data-backed strategies to attract new users—especially women and students—and convert occasional riders into daily users.",
+        solution:
+          "APEX focused on customer acquisition and retention. The team conducted customer segmentation, market research, influencer landscape analysis, and geographic prioritization. By combining qualitative insights with demographic and ridership data, APEX was able to develop targeted growth strategies tailored to user personas, cities, and behavioral trends, driving customer acquisition for the company within their desired market.",
+        deliverables: [
+          "Segmented Ideal Customer Profiles (ICPs) based on ride frequency, income, age, and use cases",
+          "Influencer and user-generated content (UGC) strategy to increase brand visibility among underrepresented demographics",
+          "Subscription and ride-pass partnership model for employers and campus organizations",
+          "Tourism-focused scooter placement and guided route partnerships with local businesses",
+          "Strategic fleet deployment recommendations based on climate, ridership timing, and urban layout",
+          "Prioritized list of Tier 1 cities and campuses for targeted growth",
+          "Framework for success metrics including ride frequency, session duration, and conversion from occasional to habitual riders",
+        ],
+        semester: "Winter 2023",
       },
     
     ],
@@ -64,19 +85,39 @@ const services = [
         id: "grocery-store",
         title: "Grocery Store Chain",
         clientOverview:
-          "An emerging manufacturing startup producing sustainable home goods, facing challenges with scaling production while maintaining quality and managing costs.",
+          "Major Midwest-based retail chain operating over 250 stores and processing more than 1 million cases weekly across multiple distribution centers.",
         problem:
-          "The client's supply chain inefficiencies were causing production delays of up to 3 weeks, increasing costs by 30% above industry standards, and resulting in customer complaints about delivery times.",
+          "Despite leveraging cutting-edge automation for fulfillment, the client faced systemic inefficiencies in its warehouse receiving process. Incomplete pallets, inconsistent vendor configurations, and frequent reordering of slow-moving goods created bottlenecks. These inefficiencies, coupled with communication gaps in a usage-based automation model and the complexities of expanding into smaller-format stores, resulted in increased downtime, rising operational costs, and misaligned stakeholder incentives.",
         solution:
-          "We redesigned their supply chain network, implemented inventory optimization techniques, and established strategic partnerships with reliable suppliers. We also developed a digital tracking system to provide real-time visibility into the production process.",
+          "APEX implemented a three-phase strategy: first, we analyzed a year’s worth of warehouse receiving data to identify inefficiency patterns; next, we assessed automation usage and proposed enhancements for vendor coordination; finally, we developed a hybrid contract model to incentivize uptime and proposed scalable solutions for automation in smaller-format stores. Our approach combined data analytics, operational insights, and industry best practices to drive measurable improvements.",
         deliverables: [
-          "End-to-end supply chain assessment and gap analysis",
-          "Supplier evaluation framework and recommended partnerships",
-          "Inventory management system specifications",
-          "Process optimization roadmap with prioritized initiatives",
-          "Supply chain risk management strategy",
+          "A detailed breakdown of pallet inefficiencies across top product and vendor categories",
+          "A redesigned open-book system framework to improve communication and accountability",
+          "Hybrid contract model integrating performance-based incentives with operational stability",
+          "A roadmap for scaling automation systems into modular, space-efficient fulfillment centers",
+          "Vendor negotiation toolkit and resource database to support contract restructuring and KPI alignment", 
         ],
-        semester: "W25",
+        semester: "Winter 2025",
+      },
+      {
+        id: "capital-lender",
+        title: "Working Capital Lender",
+        clientOverview:
+          "Direct lender of working capital loans and merchant cash advances",
+        problem:
+          "The client wanted to address inefficiencies in its internal processes. Inconsistencies in onboarding, employee engagement, and training—especially across Sales, Pricing, and Collections—were hindering performance. There was also a need to reevaluate PTO structure for commission-based employees and improve adoption of internal HR software. The client sought a cohesive, scalable plan to optimize workforce structure, reduce burnout, and increase team cohesion.",
+        solution:
+          "APEX took a holistic, department-specific approach to workforce optimization. Through a series of employee interviews, industry benchmarking, survey analysis, and case studies, the team assessed current work models, onboarding practices, and cultural pain points. The result was a set of targeted, high-impact strategies that improved employee engagement, hiring, retention, and productivity while reducing operational risk.",
+        deliverables: [
+          "Hybrid work model designs with department-specific structures to boost morale and efficiency",
+          "Standardized onboarding frameworks featuring mentorship, experiential learning, and digital resource hubs",
+          "Tailored recommendations for PTO compensation models with cost-benefit breakdowns",
+          "Updated hiring strategies for high-turnover roles, including referral programs and job previews",
+          "UI/UX recommendations to drive engagement with internal HR and payroll tools",
+          "Strengths-based management approaches and low-cost engagement benefits for junior teams",
+          "Company-wide survey insights to inform ongoing cultural improvement initiatives",
+        ],
+        semester: "Fall 2023",
       },
     ],
   },
@@ -100,10 +141,31 @@ const services = [
           "Two machine learning models (Gradient Boosting for cost prediction, Random Forest for time prediction), each achieving over 90% accuracy on key supply chain changes",
           "A scalable, modular framework to support seamless model updates as new data becomes available",
           "A competitive landscape analysis detailing how industry leaders leverage machine learning in supply chains, supporting strategic recommendations",
-          "A detailed data dictionary documenting 40+ columns from the original dataset to ensure transparency and reproducibility",
-          "A suite of nine Python-based visualizations uncovering key trends driving cost and time variability",
+          "A detailed 'data dictionary' documenting 40+ columns from the original dataset to ensure transparency and reproducibility",
+          "A suite of twelve Python-based visualizations uncovering key trends driving cost and time variability",
         ],
-        semester: "W25",
+        semester: "Winter 2025",
+      },
+      {
+        id: "vr-training",
+        title: "VR Training Provider",
+        clientOverview:
+          "VR training provider offering custom safety, onboarding, and upskilling modules for enterprise clients.",
+        problem:
+          "The client approached APEX Consulting to uncover data-driven strategies to improve customer retention and refine their client acquisition pipeline. While their platform demonstrated high initial usage, many clients experienced sharp drop-offs over time. With limited internal data analytics capacity, the client needed help cleaning and analyzing usage data to inform strategic decisions on pricing, outreach, and customer engagement.",
+        solution:
+          "APEX focused on leveraging internal data to identify patterns in churn, usage behavior, and client success. The team conducted quantitative analysis, industry benchmarking, and user segmentation to identify high-fit customer profiles and develop targeted outreach strategies. Alongside retention initiatives, APEX also re-evaluated pricing models and designed scalable acquisition campaigns using marketing automation tools.",
+        deliverables: [
+          "Retention analysis identifying platform usage as the strongest predictor of churn",
+          "Ideal Customer Profile (ICP) development based on company size, industry, and usage behavior",
+          "Revised pricing model favoring per-session billing to incentivize engagement",
+          "Certification and gamification strategies to promote continued platform use",
+          "Website audit with search engine and inbound lead optimization",
+          "Data-backed outreach plan using targeted email automation tools",
+          "Client segmentation and outreach playbooks for quick-service, energy, and nonprofit sectors",
+          "Recommendations for usage tracking, goal-setting, and customer success check-ins",
+        ],
+        semester: "Winter 2024",
       },
 
     ],
@@ -117,21 +179,41 @@ const services = [
     projects: [
       {
         id: "food-delivery",
-        title: "Food Delivery Service",
+        title: "Online Food Delivery Platform",
         clientOverview:
-          "An early-stage technology startup developing an innovative SaaS solution for the healthcare industry, with seed funding but limited market validation.",
+          "Major US online food ordering and delivery service connecting customers with local restaurants ",
         problem:
-          "The client had developed a promising product but was uncertain about product-market fit, optimal pricing strategy, and go-to-market approach. They needed to validate their value proposition before committing significant resources to scaling.",
+          "The client approached APEX while evaluating expansion into the B2B catering space but lacked clarity on the competitive landscape and where the strongest market opportunities lay. To support strategic decision-making, they required a detailed analysis of direct, indirect, and M&A competitors, as well as segmented market sizing by region and industry.",
         solution:
-          "We conducted extensive market research including competitor analysis, customer interviews, and industry expert consultations. We also facilitated user testing sessions and analyzed feedback to refine the product offering.",
+          "To address the client’s uncertainty around entering the B2B catering space, APEX took a two-phased approach: a competitive landscape analysis and segmented market sizing. The team evaluated direct, indirect, and M&A competitors to understand offerings and acquisition strategies, then conducted regional and industry sizing using primary (e.g., cold calls, surveys) and secondary research. These insights informed key growth drivers and a clear go-to-market strategy.",
         deliverables: [
-          "Comprehensive competitive landscape analysis",
-          "Target market segmentation and ideal customer profiles",
-          "Pricing strategy analysis with recommendations",
-          "Feature prioritization framework based on customer value",
-          "Go-to-market strategy with channel recommendations",
+          "Competitive landscape analysis of direct and indirect players",
+          "Proposed acquisition strategy and diligence with synergy evaluation",
+          "Industry and geographic segmentation analysis",
+          "TAM, SAM, SOM calculations with detailed assumptions",
+          "Survey insights on catering frequency, customer profiles, and order preferences",
+          "Recommended expansion strategy with high-potential regions and industries",
         ],
-        semester: "F23",
+        semester: "Fall 2023",
+      },
+      {
+        id: "language-learning",
+        title: "Language Learning Platform",
+        clientOverview:
+          "Top language learning platform with 1 M+ subscribers, expanding into new engagement-driven and culture-focused revenue streams.",
+        problem:
+          "The client engaged APEX Consulting to assess the viability of launching an integrated e-commerce experience focused on culturally relevant products for language learners. With an aging millennial user base motivated by travel and cultural exploration, the client needed a go-to-market strategy to monetize user interest beyond subscription content.",
+        solution:
+          "APEX conducted an in-depth market research initiative focused on user behavior, competitor analysis, product selection, and partnership models. The team analyzed user demographic data, evaluated third-party marketplaces, and modeled financial outcomes for various revenue structures. A final implementation strategy tied product discovery to in-app learning progress to maximize conversion and retention.",
+        deliverables: [
+          "Market sizing and customer segmentation analysis for cultural e-commerce within a language learning context",
+          "Commission-based monetization model optimized by price tier and partner profile",
+          "Annual revenue projection model based on user conversion assumptions and average order value",
+          "Partnership playbook for outreach to small businesses and artisan vendor",
+          "UX and Figma mockups for mobile integration, including progress-based incentives and personalized recommendations",
+          "Full go-to-market roadmap covering Shopify backend, marketing strategies, and engagement milestones",
+        ],
+        semester: "Winter 2024",
       },
     ],
   },
@@ -144,21 +226,44 @@ const services = [
     projects: [
       {
         id: "ai-startup",
-        title: "B2B Voice AI Statup",
+        title: "B2B Voice AI Startup",
         clientOverview:
-          "A SaaS company with a successful product in the project management space, experiencing stagnation after three years of initial growth and facing increased competition.",
+          "AI voice tech startup offering multilingual transcription and automation for customer service, healthcare, education, and software.",
         problem:
-          "After rapid early adoption, the client's growth had plateaued at approximately 15,000 users. Customer acquisition costs were increasing, and they were struggling to differentiate in an increasingly crowded market.",
+          "The client approached APEX Consulting seeking to accelerate user growth across its B2B and B2C offerings by 10x. While their voice AI technology had proven advantages in accuracy and cost, they faced high drop-off rates during onboarding, limited adoption among non-technical users, and unclear strategies for expanding into new customer segments with a constrained marketing budget.",
         solution:
-          "We developed a comprehensive growth strategy focusing on new market segments and product offerings. This included expanding into adjacent verticals, developing enterprise features, and implementing a customer success program to improve retention and drive upsells.",
+          "To drive scalable growth, the APEX team took a full-funnel approach across acquisition, conversion, and retention. We conducted user research, analyzed behavioral data, and evaluated the competitive landscape to identify pain points in onboarding and customer engagement. The team then delivered targeted product and marketing recommendations to help the client unlock new users and deepen retention across priority industries.",
         deliverables: [
-          "Growth opportunity assessment across markets and product lines",
-          "Customer acquisition funnel optimization plan",
-          "Retention and expansion strategy with tactical initiatives",
-          "Product roadmap for new market penetration",
-          "Financial projections and resource allocation recommendations",
+          "Full-funnel user journey analysis identifying conversion and retention bottlenecks",
+          "Redesign recommendations for landing pages and demo experiences to reduce technical barriers",
+          "Segmentation strategy tailored to non-technical and industry-specific users",
+          "Benchmarking against key voice technology competitors",
+          "Vertical-specific dashboard concepts for customer service, healthcare, and education clients",
+          "Referral and brand awareness campaign ideas to boost organic acquisition",
+          "Go-to-market recommendations targeting education and career development partners",
+          "Community feature proposals to build engagement and unlock UGC-based growth",
         ],
-        semester: "W25",
+        semester: "Winter 2025",
+      },
+      {
+        id: "construction-tech",
+        title: "Construction Tech Startup",
+        clientOverview:
+          "Construction tech startup building 3D-printed modular homes with proprietary materials, focusing on sustainability, speed, and cost-efficiency for homeowners and developers.",
+        problem:
+          "The client approached APEX Consulting to guide their U.S. expansion strategy and develop a pricing model aligned with regional construction economics and buyer willingness to pay. With a goal of scaling into markets like California and Florida, the client needed to benchmark costs, justify premium pricing, and identify high-growth cities for developer outreach.",
+        solution:
+          "APEX conducted a comprehensive go-to-market analysis combining cost modeling, market research, and geographic expansion strategy. We evaluated upkeep savings, benchmarked traditional construction costs, and analyzed buyer preferences for sustainable and customizable housing. Our deliverables equipped the client to optimize pricing, communicate product value, and expand into promising regions with data-backed confidence.",
+        deliverables: [
+          "Regional cost benchmarking model comparing traditional vs. tech-enabled home construction and upkeep",
+          "Price premium analysis for sustainability and customization using multi-country studies and market proxies",
+          "Willingness-to-pay estimates for energy-efficient design and durable construction materials",
+          "Expansion roadmap identifying top 10 U.S. small, medium, and large cities by tech-readiness, housing trends, and demographics",
+          "Developer segmentation and outreach strategy for Miami-Dade, Bay Area, Salt Lake City, and other target markets",
+          "Excel-based pricing calculator to help sales teams adjust quotes by region, home size, and design tier",
+          "Strategic risks and mitigants for scaling into regulated or climate-sensitive regions"
+        ],
+        semester: "Fall 2023",
       },
     ],
   },
@@ -170,25 +275,45 @@ const services = [
       "We help businesses develop and implement effective business strategies to achieve their long-term goals and objectives.",
     projects: [
       {
-        id: "healthcare-tech",
-        title: "Healthcare Technology Startup",
+        id: "healthcare-startup",
+        title: "Healthcare technology startup focused on enabling secure, patient-centered data sharing and advancing digital health research.",
         clientOverview:
-          "Healthcare tech startup that enables secure, patient-centered data sharing and digital health research",
+          "Healthcare technology startup focused on enabling secure, patient-centered data sharing and advancing digital health research.",
         problem:
-          "The client approached APEX without a standardized pricing model, relying on manual quotes for each customer, resulting in delayed estimates and client confusion over pricing rationale. APEX was tasked with devising a data-backed, standardized calculator to streamline pricing across customers.",
+          "The client lacked a standardized pricing model and relied on manual quote generation for each customer, resulting in inconsistent pricing, delayed turnaround times, and customer confusion regarding how pricing was determined. This inefficiency created friction in the sales process and hindered scalability as the business grew. Without a clear pricing framework, it was also difficult to communicate product value or adapt pricing to different customer segments.",
         solution:
-          "APEX examined the client’s complex product portfolio and current pricing practices, studied competitor case studies, analyzed customer data, and conducted expert interviews to assess industry trends, ultimately developing a comprehensive pricing model and a standardized calculator for the client’s website.",
+          "To solve this, APEX implemented a structured three-phase strategy comprising detailed research, strategic pricing development, and iterative testing. The team assessed the client’s product portfolio and current pricing processes, then conducted market research including competitor benchmarking, customer data analysis, and expert interviews. These findings informed the development of a streamlined pricing framework and an interactive calculator for the client’s website, enhancing transparency and operational efficiency.",
         deliverables: [
-          "5 Annotated Competitor Expert Interview Transcripts ",
+          "5 Annotated Competitor Expert Interview Transcripts",
           "Client and Competitor Case Studies",
           "In-Depth Pricing Model Framework",
-          "Product Bundling Based on Accrued Client Value and Cost Incurred",
-          "2 Interactive Figma Mockups Displaying Website Implementation",
+          "Product Bundling Based on Client Value and Cost Structure",
+          "2 Interactive Figma Mockups for Website Implementation",
           "Standardized Pricing Calculator Framework",
           "Implementation Timeline and Feasibility Assessment",
-          "Risks and Mitigation Plan"
+          "Risks and Mitigation Plan",
         ],
-        semester: "F24",
+        semester: "Fall 2024",
+      },
+
+      {
+        id: "music-streaming",
+        title: "Music Streaming Platform",
+        clientOverview:
+          "An all-in-one platform empowering emerging music creators to record, edit, promote, and distribute their work.",
+        problem:
+          "The client engaged APEX to address a decline in user growth coupled with increasing user attrition. Despite a strong brand presence, they lacked a cohesive strategy to re-engage existing users while attracting new ones in key target demographics. Internal resources had been stretched thin across digital and live initiatives, making it difficult to prioritize high-impact engagement strategies.",
+        solution:
+          "APEX began by analyzing user engagement data to identify high-potential customer segments for targeted growth. The team conducted user surveys, in-depth interviews, and market research to uncover key motivators and pain points. These insights shaped a comprehensive growth playbook with initiative recommendations, projected outcomes, and cost estimates. The playbook was packaged into a full implementation program with a rollout timeline, event strategy, and marketing collateral.",
+        deliverables: [
+          "Survey Results and Analysis",
+          "Long-Form Interview Transcripts",
+          "Growth and Retention Strategy Playbook",
+          "Implementation Guidelines and Roadmap",
+          "Cost Model for Recommended Initiatives",
+          "Supporting Marketing Materials"
+        ],
+        semester: "Summer 2024",
       },
     ],
   },
@@ -403,7 +528,7 @@ export default function ServicesPage() {
                         <Card className="overflow-hidden border-none shadow-lg">
                           <CardContent className="p-0">
                             <div className="bg-gradient-to-r from-apex-red to-red-700 p-4 text-white">
-                              <h3 className="text-xl font-bold">{currentProject.title} Case Study</h3>
+                              <h3 className="text-xl font-bold">{currentProject.title}</h3>
                               <div className="flex items-center gap-2 mt-1 text-sm">
                                 <Calendar className="h-4 w-4" />
                                 <span>Project Semester: {currentProject.semester}</span>

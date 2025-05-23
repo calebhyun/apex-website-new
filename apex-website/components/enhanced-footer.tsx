@@ -77,7 +77,7 @@ export default function EnhancedFooter() {
 
                 <p className="mb-8 text-white/90 text-lg">
                   Partner with APEX to receive data-driven, strategic recommendations from our talented team of
-                  consultants. We've helped over 50 organizations achieve their goals.
+                  consultants. We've helped over 130 organizations achieve their goals.
                 </p>
 
                 <div className="mt-auto">
