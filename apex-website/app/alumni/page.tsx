@@ -303,19 +303,7 @@ export default function AlumniPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
-                  <div className="text-4xl font-bold mb-2">85%</div>
-                  <p className="text-sm">of our alumni work at Fortune 500 companies **maybe use locations or smth</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
-                <CardContent className="p-6 text-center">
-                  <div className="text-4xl font-bold mb-2">$95K+</div>
-                  <p className="text-sm">average starting salary ***diff stat!!</p>
-                </CardContent>
-              </Card>
-              <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
-                <CardContent className="p-6 text-center">
-                  <div className="text-4xl font-bold mb-2">200+</div>
+                  <div className="text-4xl font-bold mb-2">100+</div>
                   <p className="text-sm">alumni in our network</p>
                 </CardContent>
               </Card>
@@ -323,6 +311,18 @@ export default function AlumniPage() {
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">100%</div>
                   <p className="text-sm">job placement rate upon graduation</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl font-bold mb-2">80+</div>
+                  <p className="text-sm">unique employers of APEX alumni</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl font-bold mb-2">30+</div>
+                  <p className="text-sm">alumni at MBB and Big 4 consulting</p>
                 </CardContent>
               </Card>
             </div>
