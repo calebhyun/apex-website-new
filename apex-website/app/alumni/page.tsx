@@ -26,7 +26,7 @@ const testimonials = [
     role: "Business Analyst",
     company: "McKinsey & Company",
     year: "2025",
-    image: "/images/alumni-testimonials/JadenD.jpg",
+    image: "/images/alumni-testimonials/JadenD.JPG",
     quote:
       "APEX has seriously meant the world to me! I’ve grown so much — whether it was learning how to network or figuring out how to make an impactful slide deck, I feel more than ready to jump into my full-time consulting job. But honestly, the best part has been the memories I’ve made with my best friends — flag football, retreat, consulting club date parties — it’s been such a fun ride and I’m so grateful for it all!",
   },
@@ -300,25 +300,25 @@ export default function AlumniPage() {
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">100+</div>
-                  <p className="text-sm">alumni in our network</p>
+                  <p className="text-sm">ALUMNI IN OUR NETWORK</p>
                 </CardContent>
               </Card>
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">100%</div>
-                  <p className="text-sm">job placement rate upon graduation</p>
+                  <p className="text-sm">JOB PLACEMENT UPON GRADUATION</p>
                 </CardContent>
               </Card>
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">80+</div>
-                  <p className="text-sm">unique employers of APEX alumni</p>
+                  <p className="text-sm">UNIQUE EMPLOYERS OF APEX ALUMNI</p>
                 </CardContent>
               </Card>
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">30+</div>
-                  <p className="text-sm">alumni at MBB and Big 4 consulting</p>
+                  <p className="text-sm">ALUBMI AT MBB AND BIG 4 CONSULTING</p>
                 </CardContent>
               </Card>
             </div>

@@ -213,7 +213,7 @@ const teamMembers = {
     {
       name: "Vansh Baxi",
       role: "Business Analyst",
-      image: "/images/headshots/BA/VanshB.jpeg",
+      image: "/images/headshots/BA/VanshB.JPEG",
       linkedin: "https://www.linkedin.com/in/vanshbaxi/",
       email: "vbaxi@umich.edu",
     },
