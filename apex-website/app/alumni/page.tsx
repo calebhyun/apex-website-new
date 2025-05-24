@@ -300,25 +300,25 @@ export default function AlumniPage() {
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">100+</div>
-                  <p className="text-sm">ALUMNI IN OUR NETWORK</p>
+                  <p className="text-sm">Alumni In Our Network</p>
                 </CardContent>
               </Card>
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">100%</div>
-                  <p className="text-sm">JOB PLACEMENT UPON GRADUATION</p>
+                  <p className="text-sm">Job Placement Upon Graduation</p>
                 </CardContent>
               </Card>
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">80+</div>
-                  <p className="text-sm">UNIQUE EMPLOYERS OF APEX ALUMNI</p>
+                  <p className="text-sm">Unique Employers of APEX Alumni</p>
                 </CardContent>
               </Card>
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">30+</div>
-                  <p className="text-sm">ALUBMI AT MBB AND BIG 4 CONSULTING</p>
+                  <p className="text-sm">Alumni at MBB and Big 4 Consulting</p>
                 </CardContent>
               </Card>
             </div>
