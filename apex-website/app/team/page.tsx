@@ -33,6 +33,14 @@ const teamMembers = {
     },
 
     {
+      name: "Urmi Joglekar",
+      role: "VP Technology and Operations",
+      image: "/images/headshots/Board/UrmiJ.JPG",
+      linkedin: "https://www.linkedin.com/in/urmi-joglekar/",
+      email: "urmij@umich.edu",
+    },
+
+    {
       name: "Ivan Dashkevich",
       role: "VP Project Management",
       image: "/images/headshots/Board/IvanD.JPG",
@@ -46,14 +54,6 @@ const teamMembers = {
       image: "/images/headshots/Board/NoahK.JPG",
       linkedin: "https://www.linkedin.com/in/noah-knutsen/",
       email: "nknutsen@umich.edu",
-    },
-
-    {
-      name: "Urmi Joglekar",
-      role: "VP Technology and Operations",
-      image: "/images/headshots/Board/UrmiJ.JPG",
-      linkedin: "https://www.linkedin.com/in/urmi-joglekar/",
-      email: "urmij@umich.edu",
     },
 
   ],
