@@ -1,7 +1,7 @@
 # APEX Consulting Website
 ## Overview
 
-Created in 2025, uses Next.js, TailwindCSS, JavaScript
+Created in 2025, uses Next.js, TailwindCSS, JavaScript, TypeScript
 
 ## Installations
 
