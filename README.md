@@ -1,7 +1,7 @@
 # APEX Consulting Website
 ## Overview
 
-Created in 2025, this new version of the APEX Website leverages Next.js to maintain a sleek design and dynanic elements
+Created in 2025, uses Next.js, TailwindCSS, JavaScript
 
 ## Installations
 
