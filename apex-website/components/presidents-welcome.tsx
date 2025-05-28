@@ -21,7 +21,7 @@ const presidentImages = [
     caption: "Sajni Patel, President of APEX Consulting",
   },
   {
-    src: "/images/presidentswelcome/pic2.JPEG",
+    src: "/images/presidentswelcome/pic2.jpeg",
     alt: "Sajni Patel, President of APEX Consulting",
     caption: "",
   },
@@ -36,7 +36,7 @@ const presidentImages = [
     caption: "",
   },
   {
-    src: "/images/presidentswelcome/pic5.JPEG",
+    src: "/images/presidentswelcome/pic5.jpeg",
     alt: "Sajni Patel, President of APEX Consulting",
     caption: "",
   },

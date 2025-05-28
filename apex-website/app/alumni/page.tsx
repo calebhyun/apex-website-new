@@ -60,6 +60,28 @@ const testimonials = [
       "APEX has been one of the most meaningful parts of my college journey—equal parts community, challenge, and growth. Working on real client projects with my team gave me the chance to dive deep into product strategy, pitch tangible solutions, and learn what it means to collaborate under pressure. From late-night working sessions to spontaneous team dinners, the experience pushed me far beyond the classroom. I not only gained exposure to real-world problem-solving but also built friendships and memories that made every moment unforgettable. Looking back, it’s clear that the laughs, the hard work, and the incredible people shaped my understanding of product management and inspired me to keep growing.",
     },
 
+  {
+    name: "David Hargitt",
+    role: "Associate",
+    company: "Bain & Company",
+    year: "2023",
+    image: "/images/alumni-testimonials/DavidH.jpg",
+    quote:
+      "APEX has always been a supportive sanctuary for me to learn, lead, and laugh alongside driven and dedicated friends who push me to be the best version of myself every day. APEX provided not only the skills needed to secure my full time job and make a living, but also the support system and friendships to make a life. Whether that’s as a freshman soaking up what it means to be a leader in business and delivering results for our clients, or as a senior giving back and investing in mentorship, the APEX experience was richly impactful and enhanced each aspect of my college journey!",
+    },
+
+  {
+    name: "Emma Putti",
+    role: "Program Manager",
+    company: "Microsoft",
+    year: "2025",
+    image: "/images/alumni-testimonials/EmmaP.jpg",
+    quote:
+      "I’m so thankful to have had the APEX community with me during my time in college. Even though I decided to not go into consulting, working directly with a real client, leading a team as a project manager, and learning how to strategically solve business problems, was invaluable in my role as a program manager. I also wouldn’t have known I could go into program management at a tech company if it wasn’t for an APEX alumni who taught me all about it. I can say without a doubt that I would not be where I am today personally or professionally without the wonderful people of APEX Consulting Group."
+    },
+
+
+
 ]
 
 // Company logos where alumni work
@@ -300,7 +322,7 @@ export default function AlumniPage() {
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
                 <CardContent className="p-6 text-center">
                   <div className="text-4xl font-bold mb-2">100+</div>
-                  <p className="text-sm">Alumni In Our Network</p>
+                  <p className="text-sm">Alumni in Our Network</p>
                 </CardContent>
               </Card>
               <Card className="bg-gradient-to-br from-apex-red to-red-700 text-white">
