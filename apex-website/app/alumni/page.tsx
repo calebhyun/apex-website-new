@@ -80,8 +80,6 @@ const testimonials = [
       "I’m so thankful to have had the APEX community with me during my time in college. Even though I decided to not go into consulting, working directly with a real client, leading a team as a project manager, and learning how to strategically solve business problems, was invaluable in my role as a program manager. I also wouldn’t have known I could go into program management at a tech company if it wasn’t for an APEX alumni who taught me all about it. I can say without a doubt that I would not be where I am today personally or professionally without the wonderful people of APEX Consulting Group."
     },
 
-
-
 ]
 
 // Company logos where alumni work
