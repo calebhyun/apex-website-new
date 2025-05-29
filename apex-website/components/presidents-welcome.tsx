@@ -16,7 +16,7 @@ interface PresidentsWelcomeProps {
 // Sample images for the carousel - replace with actual images
 const presidentImages = [
   {
-    src: "/images/presidentswelcome/pic1.JPEG",
+    src: "/images/presidentswelcome/pic1.jpeg",
     alt: "Sajni Patel, President of APEX Consulting",
     caption: "Sajni Patel, President of APEX Consulting",
   },
@@ -31,7 +31,7 @@ const presidentImages = [
     caption: "",
   },
   {
-    src: "/images/presidentswelcome/pic4.JPEG",
+    src: "/images/presidentswelcome/pic4.jpg",
     alt: "Sajni Patel, President of APEX Consulting",
     caption: "",
   },
