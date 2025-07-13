@@ -48,7 +48,7 @@ const traditions = [
   {
     image: "/images/join/newbie.JPEG",
     title: "Newbie Welcome Party",
-    description: "We love our new members! Your new member semester will be one of the most rewarding experiences of college`.",
+    description: "We love our new members! Your new member semester will be one of the most rewarding experiences of college.",
   },
   {
     image: "/images/join/sand.JPEG",
