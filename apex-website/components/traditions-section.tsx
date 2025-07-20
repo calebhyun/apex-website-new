@@ -32,7 +32,7 @@ const traditions = [
   },
   {
     image: "/images/join/gameday.JPEG",
-    title: "Michigan Gameeday Tailgates",
+    title: "Michigan Gameday Tailgates",
     description: "There's always a group of APEX members tailgating before each home game! We often mix with other clubs on campus to have fun and make friends.",
   },
   {
